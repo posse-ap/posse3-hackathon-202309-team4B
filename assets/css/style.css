@@ -1,3 +1,5 @@
+
+/* ヘッダー */
 .header{ 
     display: flex;
     align-items: center;
@@ -40,3 +42,41 @@
     display: flex;
 }
 
+/* 共通 */
+.section{
+    padding-top: 80px;
+}
+
+.section-body{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.title{
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: .05em;
+    display: block;
+    font-weight: bold;
+    width: fit-content;
+    position: relative;
+    margin: 0 auto;
+}
+
+.title::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-image: linear-gradient(to right, #fff 0%, rgb(242, 94, 2) 50%, #fff 100%);
+    position: absolute;
+}
+
+/* メインページ */
+
+
+/* リマインド */
+
+/* ハッカソンレポ */
