@@ -29,7 +29,7 @@
 
 .header-navList{
     display: flex;
-    gap: 32px; 
+    gap: 32px;
 }
 
 .header-navLink{
@@ -40,6 +40,24 @@
     letter-spacing: 0.1em;
     transition: color 0.3s linear;
     display: flex;
+}
+
+
+/* フッター */
+.footer{
+    padding-top: 40px;
+    text-align: center;
+  }
+.footer-copyright{
+    text-align: center;
+    margin-top: 24px;
+    border-top: solid 1px var(--gray-light-color);
+    color: var(--gray-color);
+    font-family: var(--english-font);
+    letter-spacing: .1em;
+    line-height: 1.5;
+    font-size: 10px;
+    padding: 24px;
 }
 
 /* 共通 */
@@ -80,3 +98,4 @@
 /* リマインド */
 
 /* ハッカソンレポ */
+
