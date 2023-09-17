@@ -24,13 +24,13 @@ main{
 }
 
 .header-logo{
-    width: flex; 
+    width: flex;
     margin-left: 80px;
 }
 
 .header-nav{
     display: flex;
-    align-items: center; 
+    align-items: center;
     margin-left: auto;
     margin-right: 120px;
 }
@@ -85,13 +85,13 @@ main{
 }
 
 .title{
-    font-size: 36px; 
-    font-weight: bold; 
-    color: #333; 
-    text-align: center; 
-    margin: 20px 0; 
-    text-transform: uppercase; 
-    letter-spacing: 2px; 
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .title{
@@ -140,19 +140,19 @@ main{
 	background-color: rgba(224,66,114,1);
 }
 
-
 .mainVisual-inner {
     max-width: 980px;
     width: 100%;
     margin: 0 auto;
 }
-
 .mainVisual-head {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     gap: 12px;
     align-items: flex-start;
 }
+
+
 
 /**
 メインページ 
@@ -174,7 +174,6 @@ main{
     color: #fff;
 }
 
-
 .mainVisual-title{
     background-color: #ffffff00;
     color: #ffffff;
@@ -184,7 +183,17 @@ main{
     font-size: 55px;
     padding-left: 20px;
     padding-right: 4px;
+}
 
+.wrapper{
+    
+}
+
+.about-text{
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    text-align: center;
 }
 
 .square{
@@ -204,7 +213,7 @@ main{
 .linkButton{
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #e8884d;
     color: #fff;
     text-decoration: none;
     border: none;
@@ -213,14 +222,17 @@ main{
 }
 
 .linkButton:hover{
-    background-color: #0056b3;
+    background-color: #b96109;
 }
+
+
 
 
 /** 
 リマインドページ 
 **/
 .lecture-list{
+
     padding-top: 40px;
     display: flex;
     flex-direction: column;
@@ -287,7 +299,7 @@ main{
     letter-spacing: 0.05em;
     margin-left: 20px;
     }
-    
+
 .lectureOutline{
     margin-top: 40px;
 }
@@ -379,10 +391,17 @@ main{
     padding-left: 150px;
     padding-top: 20px;
     font-size: 30px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.winnerInterview{
+    max-width: 100%;
+    text-align: center;
 }
 
 .winnerInterview-img{
-    max-width: 100%;
+    box-shadow: #333;
 }
 
 .explain{
@@ -419,7 +438,7 @@ main{
 
 
 .comment{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .winner-talk{
@@ -430,7 +449,6 @@ main{
     padding: 10px;
     position: relative;
     font-size: 30px;
-    
 }
 .winner-talk-left:after {
     content: '';
@@ -443,8 +461,44 @@ main{
 
 }
 
-.answerbox{
+.answerBox{
     margin-left: 25%;
 }
 
+#info{
+	display: none;
+}
+
+.modaal-container{
+    max-width: 600px;
+}
+
+.modaal-close:after, 
+.modaal-close:before{
+	background:#ccc;	
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+	background:#666;
+}
+
+.privacy{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.privacy-info{
+    display: flex;
+    height: 100px;
+    width: auto;
+}
+.privacyInfo-exp{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+}
 
