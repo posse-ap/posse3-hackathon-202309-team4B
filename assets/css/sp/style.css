@@ -1,0 +1,206 @@
+@media (max-width: 768px){
+
+/* 文字のcss */
+
+/* 1.0 - Common */
+  /* ============================================ */
+
+  /**
+  * 1.2 - ベーススタイル
+  */
+
+  /**
+  * 1.3 - 汎用スタイル
+  */
+
+  /* 2.0 - Sections */
+  /* ============================================ */
+
+  /**
+  * 2.1 - ヘッダー
+  */
+  .header{
+    height: 48px;
+    padding: 0 12px;
+  }
+  
+  .header-logo{
+    width: 100px;
+    z-index: 1;
+  }
+  
+  .header-nav{
+    visibility: hidden;
+    position: fixed;
+    inset: 0;
+    opacity: 0;
+    background-color: #faf0be;
+    flex-direction: column;
+    padding: 120px 24px 40px;
+    transition: visibility .3s liner, opacity .3s linear;
+  }
+  
+  .header-button{
+    width: 42px;
+    height: 42px;
+    position: relative;
+    margin-left: auto;
+    z-index: 1;
+  }
+  
+  .header-buttonLine{
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #b96109;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .header-buttonLine:nth-of-type(1){
+    top: 13px;
+  }
+  
+  .header-buttonLine:nth-of-type(2){
+    top: 20px;
+  }
+  
+  .header-buttonLine:nth-of-type(3){
+    top: 27px;
+  }
+  
+  .header.is-open .header-buttonLine:nth-of-type(1){
+    transform: translateX(-50%) rotate(45deg);
+    top: 20px;
+  }
+  
+  .header.is-open .header-buttonLine:nth-of-type(2){
+    opacity: 0;
+  }
+  
+  .header.is-open .header-buttonLine:nth-of-type(3){
+    transform: translateX(-50%) rotate(-45deg);
+    top: 20px;
+  }
+  
+  .header.is-open .header-nav{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .header-navList{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  
+  /* .header-corporateLink{
+    color: var(--gray-dark-color);
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .header-corporateLink::after{
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: url(../../img/icon-external-link.svg) center center / contain no-repeat;
+  } */
+
+  .header.is-transparent:not(.is-open) .header-buttonLine{
+    background-color: #fff;
+  }
+  
+  /**
+  * 2.2 - フッター
+  */
+
+  /**
+  * 2.3 - メイン
+  */
+
+  /**
+  * 2.4 - ハッカソンレポ
+  */
+
+  /**
+  * 2.5 - リマインド
+  */
+  .splide.is-initialized:not(.is-active) .recture-list{
+    display: flex;
+  }
+  
+  .recture-slide{
+    margin: 0 -12px;
+    overflow: auto;
+  }
+  
+  .recture-list{
+    flex-direction: row;
+    gap: initial;
+  }
+  
+  .recture-item{
+    flex-direction: column;
+    width: 320px;
+    flex-shrink: 0;
+  }
+  
+  .recture-item:nth-of-type(odd){
+    flex-direction: column;
+    margin-right: 0;
+  }
+  
+  .recture-item:nth-of-type(even){
+    margin-left: 0;
+  }
+  
+  .recture-itemImage{
+    width: 100%;
+    height: 200px;
+    margin-top: 0;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .recture-item:nth-of-type(odd) .recture-itemImage{
+    margin-right: 0;
+  }
+  
+  .recture-item:nth-of-type(even) .recture-itemImage{
+    margin-left: 0;
+  }
+  
+  .recture-itemBody{
+    padding: 20px 24px;
+  }
+  
+  .recture-titleNumber{
+    font-size: 40px;
+  }
+  
+  .recture-titleText{
+    font-size: 20px;
+    margin-left: 12px;
+  }
+  
+  .rectureOutline{
+    padding-top: 20px;
+  }
+
+  /* 3.0 - Animation, JavaScript Object */
+  /* ============================================ */
+
+  /**
+  * 3.1 - フェードイン
+  */
+
+  /**
+  * 3.2 - スライダー
+  */
+
+}

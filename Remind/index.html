@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header class="header" id="js-header">
+    <header class="header is-open" id="js-header">
         <a href="../index.html" class="header-logo">
             <img src="../assets/img/logo.svg" alt="POSSE" />
         </a>
@@ -23,6 +23,9 @@
         </button>
         <nav class="header-nav">
             <ul class="header-navList">
+                <li class="header-navItem">
+                    <a href="../index.html" class="header-navLink">メイン</a>
+                </li>
                 <li class="header-navItem">
                     <a href="../Hackathon/" class="header-navLink">ハッカソンレポ</a>
                 </li>
@@ -60,9 +63,10 @@
         </div>
         <section class="section">
             <div class="section-head">
-                <h2 class="leadItem">講演会</h2>
+                <h2 class="leadItem" data-en="Recture">講演会</h2>
             </div>
             <div class="section-body">
+
                 <ul class="recture-list">
                     <li class="recture-item">
                         <figure class="recture-itemImage">
@@ -77,13 +81,13 @@
                                     エンジニアという職業
                             </div>
                             <div class="recture-description">
-                                実際にプログラミングを使って生活をしている方からお話を聞ける機会を設けることができました!プログラミングの将来性を知ることができるいい時間となるはずです!
+                                実際にプログラミングを使って生活をしている方から<br>お話を聞ける機会を設けることができました!<br>プログラミングの将来性を知れるいい時間となるはずです!
                             </div>
                         </div>
                     </li>
                     <li class="recture-item">
                         <figure class="recture-itemImage">
-                            <img src="../assets/img/interviewToSenpai.jpg" alt="">
+                            <img src="../assets/img/interview2.jpg" alt="">
                         </figure>
                         <div class="recture-itemBody">
                             <h3 class="recture-title">
@@ -100,7 +104,7 @@
                     </li>
                     <li class="recture-item">
                         <figure class="recture-itemImage">
-                            <img src="../assets/img/recture.jpg" alt="">
+                            <img src="../assets/img/recture2.jpg" alt="" >
                         </figure>
                         <div class="recture-itemBody">
                             <h3 class="recture-title">
@@ -116,6 +120,7 @@
                         </div>
                     </li>
                 </ul>
+
                 <div class="memoItem">
                     <input type="text" class="new-memo" id="newMemo">
                     <button type="button" class="add-memo">メモ追加</button>
@@ -127,12 +132,12 @@
         </section>
     </main>
 
-
+    <footer class="footer">
+        <div class="footer-copyright">
+            <small lang="en">&copy; 2023 POSSE all rights reserved</small>
+        </div>
+    </footer>
     
 </body>
-<footer class="footer">
-    <div class="footer-copyright">
-        <small lang="en">&copy; 2023 POSSE all rights reserved</small>
-    </div>
-</footer>
+
 </html>

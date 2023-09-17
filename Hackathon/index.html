@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/sp/style.css">
     <script src="../assets/js/script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
 </head>
 
 <body>
-    <header class="header" id="js-header">
+    <header class="header is-open" id="js-header">
         <a href="../index.html" class="header-logo">
             <img src="../assets/img/logo.svg" alt="POSSE" />
         </a>
@@ -23,6 +24,9 @@
         </button>
         <nav class="header-nav">
             <ul class="header-navList">
+                <li class="header-navItem">
+                    <a href="../index.html" class="header-navLink">メイン</a>
+                </li>
                 <li class="header-navItem">
                     <a href="./" class="header-navLink">ハッカソンレポ</a>
                 </li>
@@ -59,22 +63,33 @@
                 <h1 class="title">Hackathon</h1>
             </div>
             <div class="hackathon-sectionbody">
-                <h2 class="leadItem">優勝者インタビュー</h2>
+                <h2 class="leadItem" data-en="Interview">優勝者インタビュー</h2>
                 <div class="winnerInterview">
-                    <figure class="winnerInterview-img">
-                        <img src="/assets/img/winner.jpg" alt="">
-                    </figure>
+                    <img src="/assets/img/winner.jpg" class="winnerInterview-img">
                     <p class="explain">2023年7月1,2日に「新人ハッカソン」が開催されました！<br>4.0期生にとって初めてのハッカソン。POSSE③の優勝者「レモンハーブチキン」にインタビューしました。<br>
                     </p>
                 </div>
                     <div class="winner-question">
                         <div class="winnerComment">
                             <h3 class="question">Q優勝した今の気持ちは？</h3>
-                            <div class="answerbox">
+                            <div class="answerBox">
                                 <div class="winnerComment-box">
                                     <div class="winner-img">
                                         <img src="/assets/img/hinata.jpg" alt="日向">
-                                        <p class="winnerName">日向祥太</p>
+                                        <p class="winnerName">
+                                            <a href="#info" class="modal-open">日向祥太</a>
+                                        </p>
+                                            <!-- 日向祥太のモーダルウィンドウ -->
+                                                <section id="info">
+                                                    <h2 class="privacy">日向祥太プチ情報</h2>
+                                                    <div class="privacy-info">
+                                                        <img src="/assets/img/hinata.jpg" alt="">
+                                                        <a href="https://www.instagram.com/shota_tty/" target="_blank" rel="noopener noreferrer">
+                                                            <img src="/assets/img/icon-instagram.png" alt="">
+                                                        </a>
+                                                        <p class="privacyInfo-exp">「もちまるい」(持丸るい)の呼び方を浸透させたい男</p>
+                                                    </div>
+                                                </section>
                                     </div>
                                     <div class="winner-talk-left winner-talk">
                                         <p class="comment">そうですね、すごく周りに感謝しています。<br> ありがとうございます。</p>
@@ -83,7 +98,20 @@
                                 <div class="winnerComment-box">
                                     <div class="winner-img">
                                         <img src="/assets/img/misaki.jpg" alt="みさき">
-                                        <p class="winnerName">山田美紗樹</p>
+                                        <p class="winnerName">
+                                            <a href="#info" class="modal-open2">山田美紗樹</a>
+                                        </p>
+                                        <!-- 山田美紗樹のモーダルウィンドウ -->
+                                        <section id="info">
+                                            <h2 class="privacy">山田美紗樹プチ情報</h2>
+                                            <div class="privacy-info">
+                                                <img src="/assets/img/misaki.jpg" alt="">
+                                                <a href="https://www.instagram.com/miss213a/" target="_blank" rel="noopener noreferrer">
+                                                    <img src="/assets/img/icon-instagram.png" alt="">
+                                                </a>
+                                                <p class="privacyInfo-exp">祖父母があざみ野在住（仮）</p>
+                                            </div>
+                                        </section>
                                     </div>
                                     <div class="winner-talk-left winner-talk">
                                         <p class="comment">凄く皆で頑張って、優勝したいと思っていたので嬉しいです！</p>
@@ -92,7 +120,21 @@
                                 <div class="winnerComment-box">
                                     <div class="winner-img">
                                         <img src="/assets/img/yuzuki.jpg" alt="ゆずき">
-                                        <p class="winnerName">船本雄月</p>
+                                        <p class="winnerName">
+                                            <a href="#info" class="modal-open3">船本雄月</a>
+                                        </p>
+                                        <!-- 船本雄月のモーダルウィンドウ -->
+                                        <section id="info">
+                                            <h2 class="privacy">船本雄月プチ情報</h2>
+                                            <div class="privacy-info">
+                                                <img src="/assets/img/yuzuki.jpg" alt="">
+                                                <a href="https://www.instagram.com/yuzuki0127__" target="_blank" rel="noopener noreferrer">
+                                                    <img src="/assets/img/icon-instagram.png" alt="">
+                                                </a>
+                                                <p class="privacyInfo-exp">新宿のよくわからないカフェでバイトしている
+                                                </p>
+                                            </div>
+                                        </section>
                                     </div>
                                     <div class="winner-talk-left winner-talk">
                                         <p class="comment">嬉しいです！</p>
@@ -112,7 +154,7 @@
                         <div class="winnerComment">
                         <div class="winnerComment">
                             <h3 class="question">Qずばり優勝の秘訣は？</h3>
-                            <div class="answerbox">
+                            <div class="answerBox">
                                 <div class="winnerComment-box">
                                     <div class="winner-img">
                                         <img src="/assets/img/hinata.jpg" alt="日向">
@@ -149,7 +191,7 @@
                                         <p class="comment">仲間がいたから！！</p>
                                     </div>
                                 </div>
-                            </div>                 </div>
+                            </div>           
                     </div>           
         </section>
 
@@ -157,11 +199,16 @@
 
 
 
+<footer class="footer">
+        <div class="footer-copyright">
+            <small lang="en">&copy; 2023 POSSE all rights reserved</small>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 
-<footer class="footer">
-    <div class="footer-copyright">
-        <small lang="en">&copy; 2023 POSSE all rights reserved</small>
-    </div>
-</footer>
 </html>
