@@ -155,6 +155,7 @@ main{
 /* メインページ */
 .mainVisual{
     height: 550px;
+    margin-top: -20px;
     position: relative;
     background: url(../img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
     /*display: flex;
