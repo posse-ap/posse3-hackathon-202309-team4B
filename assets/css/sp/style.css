@@ -146,7 +146,7 @@
     display: flex;
     align-items: flex-end;
     background-image: url(/assets/img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
-    height: 700px;
+    height: 350px;
     padding: 16px 12px;
     margin-top: -60px;
 }
@@ -154,7 +154,6 @@
     max-width: 980px;
     width: 100%;
     margin: 0 auto;
-    padding-right: 5px;
   }
   .mainVisual-head {
     display: inline-flex;
@@ -192,7 +191,7 @@
 .about-gn{
   height: 500px;
   padding-top: 30px;
-  margin: 0;
+  margin: 0 10px;
 }
 
 .advice-list{
