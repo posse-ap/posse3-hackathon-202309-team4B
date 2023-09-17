@@ -2,6 +2,7 @@
 main{
     margin-top: 100px;
     background-color: #faf5e0;
+    padding-bottom: 60px;
 }
 
 /** 
@@ -52,12 +53,11 @@ main{
 /**
 フッター 
  **/
-.footer {
-    padding-top: 40px 0px 40px;
-}
+/* .footer {
+    padding-top: 40px;
+} */
 .footer-copyright {
     text-align: center;
-    margin-top: 24px;
     border-top: solid 1px;
     color: darkgrey;
     letter-spacing: 0.1em;
@@ -95,7 +95,6 @@ main{
 }
 
 .title{
-
     background-color: #e8884d; /* 背景色 */
     color: #fff; /* テキストの色 */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* テキストの影 */
@@ -111,6 +110,7 @@ main{
 	padding-bottom: 50px;
 	font-size: 26px;
 	text-align: center;
+    margin-top: 50px;
 }
 
 .leadItem span {
@@ -121,7 +121,7 @@ main{
 .leadItem::before {
 	content: attr(data-en);
 	position: absolute;
-	top: -20px;
+	top: -10px;
 	left: 50%;
 	transform: translateX(-50%);
 	color: rgba(224,66,114,0.2);
