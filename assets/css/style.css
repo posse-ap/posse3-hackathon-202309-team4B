@@ -176,32 +176,39 @@ main{
 }
 
 
-.mainVisual-title {
-  background-color: #b9d685;
-  color: #0071bc;
-  font-weight: bold;
-  line-height: 1.8;
-  letter-spacing: 0.05em;
-  font-size: 24px;
-  padding-left: 20px;
-  padding-right: 4px;
+/* メインページ */
+.mainVisual{
+    height: 550px;
+    position: relative;
+    background: url(../img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
+    /*display: flex;
+    align-items: flex-end;*/
 }
 
-.about-text {
-  font-size: 14px;
-  line-height: 1.8;
-  letter-spacing: 0.05em;
+.mainVisual-lead {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
 }
 
-.linkButton {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.mainVisual-picture{
+    position: relative;
+}
+
+.mainVisual-title{
+    background-color: #ffffff00;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    font-size: 55px;
+    padding-left: 20px;
+    padding-right: 4px;
+
 }
 
 .linkButton:hover{
@@ -222,6 +229,7 @@ main{
     border-radius: 10px;
     min-height: 324px;
     margin: 0 200px;
+    padding: 40px 20px 20px 0;
 }
 
 .recture-item:nth-of-type(odd){
@@ -231,8 +239,14 @@ main{
     /* margin-left: 40px; */
 }
 
-.recture-item:nth-of-type(even) {
-  margin-left: 40px;
+.recture-itemImage{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 480px;
+    height: 320px;
+    flex-shrink: 0;
+    margin-top: 50px;
+
 }
 
 .recture-itemImage {
@@ -245,7 +259,7 @@ main{
 }
 
 .recture-item:nth-of-type(odd) .recture-itemImage{
-    margin-right: -40px;
+    /* margin-right: -40px; */
 }
 
 .recture-item:nth-of-type(even) .recture-itemImage{
