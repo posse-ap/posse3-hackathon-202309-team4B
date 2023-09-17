@@ -143,11 +143,11 @@
         
         <div class="square">Top</div>
         <script>
-            $(function() {
-                $('.square').hide();
-                $(window).scroll(function() {
-                if ($(this).scrollTop() > 200) {
-                    $('.square').fadeIn();
+            $(function() {                              <!--139~154 by持丸-->
+              $('.square').hide();
+              $(window).scroll(function() {
+                if ($(this).scrollTop() > 400) {
+                  $('.square').fadeIn();
                 } else {
                     $('.square').fadeOut();
                 }

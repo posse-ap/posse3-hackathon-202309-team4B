@@ -83,26 +83,26 @@
                     </div>
             </section>
             <section>
-                <div>
-            <ul>
-              <h3>byさきのさん</h3>
-              <h3>まどか</h3>
-              <li>aaaa</li>
-            </ul>
-            <ul>
-              <h3>byたつさん</h3>
-              <h3>あみ</h3>
-              <li>iiiii</li>
-            </ul>
-            <ul>
-              <h3>byたいせいさん</h3>
-              <h3>なつき</h3>
-              <li></li>
-            </ul>
-            <ul>
-              <h3>byはやとさん</h3>
-              <h3>るい</h3>
-              <li></li>
+              <div class="about-gn">
+                <ul>
+                  <h3 class="leader">byさきのさん</h3>
+                  <h3 class="follower">まどか</h3>
+                  <li class="left-text animated-text"></li>
+                </ul>
+                <ul>
+                  <h3 class="leader">byたつさん</h3>
+                  <h3  class="follower">あみ</h3>
+                  <li class="left-text animated-text"></li>
+                </ul>
+                <ul>
+                  <h3 class="leader">byたいせいさん</h3>
+                  <h3 class="follower">なつき</h3>
+                <li class="right-text animated-text"></li>
+                </ul>
+                <ul>
+                  <h3 class="leader">byはやとさん</h3>
+                  <h3 class="follower">るい</h3>
+                  <li class="right-text animated-text"></li>
             </ul>
           </div>
         </section>
@@ -118,7 +118,7 @@
         </section>
       </div>
       <script>
-        $(function() {
+        $(function() {                <!--120~135 by持丸(remind-htmlのL139~154,また、hackathon-htmlのL158~173とほぼ同内容)-->
           $('.square').hide();
           $(window).scroll(function() {
             if ($(this).scrollTop() > 200) {
