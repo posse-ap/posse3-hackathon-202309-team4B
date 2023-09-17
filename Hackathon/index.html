@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/sp/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../assets/js/script.js" defer></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
 </head>
 
 <body>
+    <div class="square">Top</div>
     <header class="header is-open" id="js-header">
         <a href="../index.html" class="header-logo">
             <img src="../assets/img/logo.svg" alt="POSSE" />
@@ -194,6 +196,24 @@
                             </div>           
                     </div>           
         </section>
+        <script>
+            $(function() {
+                $('.square').hide();
+                $(window).scroll(function() {
+                if ($(this).scrollTop() > 200) {
+                    $('.square').fadeIn();
+                } else {
+                $('.square').fadeOut();
+                }
+                });
+    
+                $('.square').click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 400);
+                })
+            });
+        </script>
 
     </main>
 

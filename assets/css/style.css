@@ -4,7 +4,9 @@ main{
     background-color: #faf5e0;
 }
 
-/* ヘッダー */
+/** 
+ヘッダー 
+**/
 .header{ 
     display: flex;
     align-items: center;
@@ -47,7 +49,9 @@ main{
     display: flex;
 }
 
-/* フッター */
+/**
+フッター 
+ **/
 .footer {
     padding-top: 40px 0px 40px;
 }
@@ -62,18 +66,22 @@ main{
     padding: 24px;
 }
 
-/* 共通 */
+/** 
+共通項目 
+**/
 .section {
-    padding-top: 80px;
+  /* padding-top: 80px; */
+    margin-top: -20px;
 }
 
 .section-body {
-    margin-top: 40px;
+    /* margin-top: 40px; */
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     position: relative;
+    /* gap: ; */
 }
 
 .title{
@@ -87,11 +95,14 @@ main{
 }
 
 .title{
-    background-color: #e8884d; 
-    color: #fff; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-    padding: 10px 20px; 
-    border-radius: 10px; 
+
+    background-color: #e8884d; /* 背景色 */
+    color: #fff; /* テキストの色 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* テキストの影 */
+    padding: 10px 20px; /* 内側の余白 */
+    border-radius: 10px; /* 角丸 */
+    margin-top: -20px;
+
 }
 
 .leadItem {
@@ -143,7 +154,9 @@ main{
     align-items: flex-start;
 }
 
-/* メインページ */
+/**
+メインページ 
+**/
 .mainVisual{
     height: 550px;
     margin-top: -20px;
@@ -161,9 +174,6 @@ main{
     color: #fff;
 }
 
-/* .mainVisual-picture{
-    position: relative;
-} */
 
 .mainVisual-title{
     background-color: #ffffff00;
@@ -174,58 +184,110 @@ main{
     font-size: 55px;
     padding-left: 20px;
     padding-right: 4px;
+}
 
+.wrapper{
+    
+}
+
+.about-text{
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.square{
+    width: 32px;
+    height: 32px;
+    background-color: chocolate;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.linkButton{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e8884d;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .linkButton:hover{
-    background-color: #0056b3;
+    background-color: #b96109;
 }
 
 
-/* リマインド */
-.recture-list{
+
+
+/** 
+リマインドページ 
+**/
+.lecture-list{
+
     padding-top: 40px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    /* gap: 40px; */
 }
 
-.recture-item{
+.lecture-item{
     display: flex;
     background-color: #b4d1be;
     border-radius: 10px;
-    min-height: 324px;
-    margin: 0 200px;
-    padding: 40px 20px 20px 0;
+    min-height: 150px;
+    margin: 40px 200px;
+    padding: 20px 20px 5px 0;
 }
 
-.recture-item:nth-of-type(odd){
+.lecture-item:nth-of-type(odd){
     flex-direction: row-reverse;
 }
 
-.recture-itemImage {
+.lecture-itemImage {
     border-radius: 10px;
     overflow: hidden;
-    width: 480px;
-    height: 320px;
+    width: 350px;
+    height: 230px;
     flex-shrink: 0;
     /* margin-top: -40px; */
 }
 
-.recture-item:nth-of-type(odd) .recture-itemImage{
+.lecImg1{
+
+}
+
+.lecImg2{
+    border-radius: 45px;
+}
+
+.lecImg3{
+    border-radius: 10px ;
+}
+
+.lecture-item:nth-of-type(odd) .lecture-itemImage{
     /* margin-right: -40px; */
 }
 
-.recture-item:nth-of-type(even) .recture-itemImage{
+.lecture-item:nth-of-type(even) .lecture-itemImage{
     margin-left: -40px;
 }
 
-.recture-itemBody {
-    padding: 48px 56px;
+.lecture-itemBody {
+    padding: 40px 56px;
     width: 100%;
 }
 
-.recture-titleNumber{
+.lecture-titleNumber{
     font-weight: bold;
     font-size: 58px;
     color: #ab8424;
@@ -235,7 +297,7 @@ main{
 }
 
 
-.recture-titleText {
+.lecture-titleText {
     font-weight: bold;
     font-size: 24px;
     line-height: 1.5;
@@ -243,18 +305,92 @@ main{
     margin-left: 20px;
     }
     
-.rectureOutline{
+.lectureOutline{
     margin-top: 40px;
 }
 
-.recture-description {
+.lecture-description {
     font-weight: 14px;
     line-height: 1.8;
     letter-spacing: 0.05em;
     margin-top: 12px;
 }
 
-/* ハッカソンレポ */
+/*メモアイテム全体*/
+.memoItem {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 1000px;
+    
+    padding: 20px;
+    margin: 10px auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* メモタイトル */
+.memo-title {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+/* メモボディ */
+.memo-body {
+    display: flex;
+    gap: 100px;
+    margin-top: 10px;
+}
+
+/* メモ入力フィールド */
+.new-memo {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* メモ追加ボタン */
+.add-memo {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-memo:hover {
+    background-color: #005b8b;
+}
+
+/* メモリスト */
+.memo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* メモアイテム */
+.memo-text {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.memo-text:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/**
+ハッカソンレポ 
+**/
 
 .question{
     padding-left: 150px;

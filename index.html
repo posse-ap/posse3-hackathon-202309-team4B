@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/sp/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/script.js" defer></script>
 
 </head>
@@ -58,64 +59,81 @@
     </header>
 
     <main>
+      <div class="square">Top</div>
       <section class="mainVisual">
-
         <div class="mainVisual-lead">
-          <h1 class="mainVisual-title">主体性と活発化</h1>
-
+            <h1 class="mainVisual-title">主体性と活発化</h1>
         </div>
-      </section>
-      <div class="wrapper">
-        <section>
-          <div>
-            <h2 class="leadItem" data-en="Good&New">Good&New</h2>
+        </section>
+        <div class="wrapper">
+            <section>
+                <div>
+                    <h2 class="leadItem" data-en="Good&New">Good&New</h2>
+                </div>
+                <div>
+                    <div>
+                        <figure></figure>
+                        <div class="about-text">
+                            <p>
+                                POSSEの中でGood&Newとは大体が、横もく・縦もくの時に行われるものです。しかしながら、POSSEを自分の居場所とするには、さらに自分を知ってもらう必要がある。<br />
+                                そこで、横もく・縦もくを超えたGood&Newがその一助になると考え、ここでは、運用者であるサバリなどがここに記し、自分が関わっているメンバー以外のGood&Newを共有できるようにしました。
+                            </p>
+                        </div>
+                    </div>
+            </section>
+            <section>
+              <div class="">
+                <ul>
+                  <h3>byさきのさん</h3>
+                  <h3>まどか</h3>
+                  <li></li>
+                </ul>
+                <ul>
+                  <h3>byたつさん</h3>
+                  <h3>あみ</h3>
+                  <li></li>
+                </ul>
+                <ul>
+                  <h3>byたいせいさん</h3>
+                  <h3>なつき</h3>
+                <li></li>
+                </ul>
+                <ul>
+                  <h3>byはやとさん</h3>
+                  <h3>るい</h3>
+                  <li></li>
+            </ul>
           </div>
-          <div>
-            <div>
-              <figure></figure>
-              <div class="about-text">
-                <p>
-                  POSSEの中でGood&Newとは大体が、横もく・縦もくの時に行われるものです。しかしながら、POSSEを自分の居場所とするには、さらに自分を知ってもらう必要がある。<br />
-                  そこで、横もく・縦もくを超えたGood&Newがその一助になると考え、ここでは、運用者であるサバリなどがここに記し、自分が関わっているメンバー以外のGood&Newを共有できるようにしました。
-                </p>
-              </div>
-            </div>
         </section>
         <section>
           <div>
-            <ul>
-              <h3>byさきのさん</h3>
-              <h3>まどか</h3>
-              <li></li>
-            </ul>
-            <ul>
-              <h3>byたつさん</h3>
-              <h3>あみ</h3>
-              <li></li>
-            </ul>
-            <ul>
-              <h3>byたいせいさん</h3>
-              <h3>なつき</h3>
-              <li></li>
-            </ul>
-            <ul>
-              <h3>byはやとさん</h3>
-              <h3>るい</h3>
-              <li></li>
-            </ul>
-          </div>
-        </section>
-        <section>
-          <div>
-            <a href="./Hackathon/" class="linkButton" target="_blank" rel="noopener noreferrer">
+            <a href="./Hackathon/" class="linkButton">
             ハッカソンレポ
             </a>
-            <a href="./Remind/" class="linkButton" target="_blank" rel="noopener noreferrer">
+            <a href="./Remind/" class="linkButton">
               リマインド
             </a>
           </div>
         </section>
       </div>
+      <script>
+        $(function() {
+          $('.square').hide();
+          $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+              $('.square').fadeIn();
+            } else {
+              $('.square').fadeOut();
+            }
+          });
+
+          $('.square').click(function() {
+            $('body,html').animate({
+              scrollTop: 0
+            }, 400);
+          })
+        });
+      </script>
 
     </main>
 
@@ -126,6 +144,5 @@
         </div>
     </footer>
 </body>
-
 
 </html>

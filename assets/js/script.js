@@ -55,15 +55,18 @@ const addMemoButton = document.querySelector('.add-memo');
 addMemoButton.addEventListener('click',function(){
     const newMemoInput = document.querySelector('.new-memo');
     const memoValue = newMemoInput.value;
-    console.log(memoValue);
+
     const newMemo = document.createElement('li');
     newMemo.textContent = newMemoInput.value;
+
+    // 新しいクラスを追加
+    newMemo.classList.add('memo-text');
 
     const memoList = document.querySelector('.memo-list');
     memoList.append(newMemo);
 });
 
-const rectureSlideOptions = {
+const lectureSlideOptions = {
     type: 'loop',
     gap:40,
     padding: {left:28, right:28 },
@@ -75,6 +78,11 @@ const rectureSlideOptions = {
     },
 }
 
-new Splide('#js-rectureSlide', dailySlideOptions).mount();
+new Splide('#js-lectureSlide', lectureSlideOptions).mount();
+
+
+
+
+
 
 
