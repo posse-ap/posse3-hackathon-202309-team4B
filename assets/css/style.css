@@ -227,10 +227,13 @@ main{
 }
 
 
+
+
 /** 
 リマインドページ 
 **/
 .lecture-list{
+
     padding-top: 40px;
     display: flex;
     flex-direction: column;
@@ -393,10 +396,17 @@ main{
     padding-left: 150px;
     padding-top: 20px;
     font-size: 30px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.winnerInterview{
+    max-width: 100%;
+    text-align: center;
 }
 
 .winnerInterview-img{
-    max-width: 100%;
+    box-shadow: #333;
 }
 
 .explain{
@@ -433,7 +443,7 @@ main{
 
 
 .comment{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .winner-talk{
@@ -457,8 +467,43 @@ main{
 
 }
 
-.answerbox{
+.answerBox{
     margin-left: 25%;
 }
 
+#info{
+	display: none;
+}
 
+.modaal-container{
+    max-width: 600px;
+}
+
+.modaal-close:after, 
+.modaal-close:before{
+	background:#ccc;	
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+	background:#666;
+}
+
+.privacy{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.privacy-info{
+    display: flex;
+    height: 100px;
+    width: auto;
+}
+.privacyInfo-exp{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+}
