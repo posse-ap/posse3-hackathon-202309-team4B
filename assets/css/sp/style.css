@@ -130,14 +130,15 @@
   */
 .mainVisual{
     /* height: 315px;
-    margin-top: -60px;
+    
     background-image: url(/assets/img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
     */
     display: flex;
     align-items: flex-end;
     background-image: url(/assets/img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
-    height: 380px;
+    height: 700px;
     padding: 16px 12px;
+    margin-top: -60px;
 }
 .mainVisual-inner{
     max-width: 980px;
@@ -145,13 +146,32 @@
     margin: 0 auto;
     padding-right: 5px;
   }
+  .mainVisual-head {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 300px;
+    gap: 12px;
+    align-items: center;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
 .mainVisual-title{
-    font-size: 26px;
-    color: rgb(0, 0, 0);
+    font-size: 40px;
+    color: rgb(255, 0, 0);
     background-color: #ffffff;
     font-weight: bold;
     line-height: 1.8;
     letter-spacing: .05em;
+    margin-right: 70px;
+}
+.mainVisual-title2{
+  font-size: 40px;
+  color: rgb(238, 255, 0);
+  background-color: #ffffff;
+  font-weight: bold;
+  line-height: 1.8;
+  letter-spacing: .05em;
+  margin-left: 40px;
 }
 
   /**
