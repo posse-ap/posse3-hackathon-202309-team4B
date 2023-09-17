@@ -156,22 +156,22 @@
         </section>
         <script>
             $(function() {
-              $('.square').hide();
-              $(window).scroll(function() {
+                $('.square').hide();
+                $(window).scroll(function() {
                 if ($(this).scrollTop() > 200) {
-                  $('.square').fadeIn();
+                    $('.square').fadeIn();
                 } else {
-                  $('.square').fadeOut();
+                $('.square').fadeOut();
                 }
-              });
+                });
     
-              $('.square').click(function() {
+                $('.square').click(function() {
                 $('body,html').animate({
-                  scrollTop: 0
+                    scrollTop: 0
                 }, 400);
-              })
+                })
             });
-          </script>
+        </script>
 
     </main>
 
