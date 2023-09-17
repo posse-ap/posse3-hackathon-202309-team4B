@@ -180,6 +180,31 @@ main{
 
 }
 
+.square{
+    width: 32px;
+    height: 32px;
+    background-color: chocolate;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.linkButton{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .linkButton:hover{
     background-color: #0056b3;
 }
@@ -335,3 +360,4 @@ main{
 }
 
 
+}

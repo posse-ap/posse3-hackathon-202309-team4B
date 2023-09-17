@@ -46,3 +46,8 @@ const lectureSlideOptions = {
 new Splide('#js-lectureSlide', lectureSlideOptions).mount();
 
 
+
+
+
+
+
