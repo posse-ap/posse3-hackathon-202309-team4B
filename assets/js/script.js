@@ -46,3 +46,8 @@ const rectureSlideOptions = {
 new Splide('#js-rectureSlide', dailySlideOptions).mount();
 
 
+
+
+
+
+

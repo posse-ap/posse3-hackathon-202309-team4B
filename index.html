@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/sp/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/script.js" defer></script>
 
 </head>
@@ -58,8 +59,9 @@
     </header>
 
     <main>
-      <section class="mainVisual">
+      <div class="square">Top</div>
 
+      <section class="mainVisual">
         <div class="mainVisual-lead">
           <h1 class="mainVisual-title">主体性と活発化</h1>
 
@@ -116,6 +118,24 @@
           </div>
         </section>
       </div>
+      <script>
+        $(function() {
+          $('.square').hide();
+          $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+              $('.square').fadeIn();
+            } else {
+              $('.square').fadeOut();
+            }
+          });
+
+          $('.square').click(function() {
+            $('body,html').animate({
+              scrollTop: 0
+            }, 400);
+          })
+        });
+      </script>
 
     </main>
 
