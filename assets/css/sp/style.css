@@ -184,7 +184,43 @@
   /**
   * 2.4 - ハッカソンレポ
   */
+  .winnerInterview-img{
+    max-width: 100%;
+    padding: 0  40px 40px 40px;
+  }
+  .explain{
+    margin: -30px 30px;
+    font-size: 14px;
+    text-align: start; 
+  }
 
+  .winnerComment{
+    margin-left: -30%;
+  }
+
+  .question{
+    padding-left: 150px;
+  }
+
+  .answerBox2{
+    margin-left:295px ;
+  }
+
+  .question2{
+    padding-left: 300px;
+    padding-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 35px;
+}
+.privacy{
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.privacyInfo-exp{
+  font-size: 16px;
+}
   /**
   * 2.5 - リマインド
   */
@@ -260,6 +296,16 @@
   
   .lectureOutline{
     padding-top: 20px;
+  }
+
+  .memoItem{
+    width: 90%;
+  }
+
+  .memo-body {
+    gap: 30px;
+    flex-direction: column;
+    padding: 0 75px 0;
   }
 
   .splide__track{
