@@ -129,8 +129,10 @@ new Splide('#js-lectureSlide', lectureSlideOptions).mount();
 
 
 
-//もちまるい
-const animatedTexts = document.querySelectorAll('.animated-text');                     /*L89~106 by持丸*/
+
+
+const animatedTexts = document.querySelectorAll('.animated-text');                     /*L75~90 by持丸*/
+
         let isAnimationPlaying = false;
 
         function toggleAnimation() {
@@ -142,9 +144,7 @@ const animatedTexts = document.querySelectorAll('.animated-text');              
             isAnimationPlaying = !isAnimationPlaying;
         }
         animatedTexts.forEach(text => text.addEventListener('animationiteration', () => {
-            // アニメーションが繰り返しの場合に実行
-            toggleAnimation();
+            toggleAnimation(); //アニメーションが繰り返しの場合に実行
         }));
 
-        // クリック時にアニメーションをトグル
-        animatedTexts.forEach(text => text.addEventListener('click', toggleAnimation));
+        animatedTexts.forEach(text => text.addEventListener('click', toggleAnimation));// クリック時にアニメーションをトグル
