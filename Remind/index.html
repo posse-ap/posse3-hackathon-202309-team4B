@@ -58,7 +58,6 @@
             </ul> -->
         </nav>
     </header>
-
     <main>
         <div class="mainTitle">
             <h1 class="title">Remind</h1>
@@ -98,7 +97,7 @@
                                         <span class="lecture-titleText">先輩講演会</span>
                                     </h3>
                                     <div class="lectureOutline">
-                                        先輩方のPOSSEに対する思い＆悩み相談会
+                                        先輩方のPOSSEに対する思い&悩み相談会
                                     </div>
                                     <div class="lecture-description">
                                         <p>先輩方がPOSSEに対して今実際に思っていること、感じていることを話してくれる会です。もしかしたら過去に同じ悩みを持っていた先輩方が見つかるかも...</p>
@@ -126,14 +125,22 @@
                     </div>
                 </div>
                 <div class="memoItem">
-                    <input type="text" class="new-memo" id="newMemo">
-                    <button type="button" class="add-memo">メモ追加</button>
-                    <ul class="memo-list">
-                        <li>メモです</li>
-                    </ul>
+                    <div class="memo-head">
+                        <h3 class="memo-title">質問リスト・メモ</h3>
+                    </div>
+                    <div class="memo-body">
+                        <div class="memo-input">
+                            <input type="text" class="new-memo" id="newMemo">
+                            <button type="button" class="add-memo">メモ追加</button>
+                        </div>
+                        <ul class="memo-list">
+                            <li class="memo-text">メモです</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
+        
         <div class="square">Top</div>
         <script>
             $(function() {                              <!--139~154 by持丸-->
@@ -142,25 +149,24 @@
                 if ($(this).scrollTop() > 400) {
                   $('.square').fadeIn();
                 } else {
-                  $('.square').fadeOut();
+                    $('.square').fadeOut();
                 }
-              });
+                });
     
-              $('.square').click(function() {
-                $('body,html').animate({
-                  scrollTop: 0
-                }, 400);
-              })
+                $('.square').click(function() {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 400);
+                })
             });
-          </script>
+        </script>
     </main>
 
-    <footer class="footer">
+    <footer>
         <div class="footer-copyright">
             <small lang="en">&copy; 2023 POSSE all rights reserved</small>
         </div>
     </footer>
 
 </body>
-
 </html>

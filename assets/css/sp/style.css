@@ -128,6 +128,31 @@
   /**
   * 2.3 - メイン
   */
+.mainVisual{
+    /* height: 315px;
+    margin-top: -60px;
+    background-image: url(/assets/img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
+    */
+    display: flex;
+    align-items: flex-end;
+    background-image: url(/assets/img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
+    height: 380px;
+    padding: 16px 12px;
+}
+.mainVisual-inner{
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 5px;
+  }
+.mainVisual-title{
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: .05em;
+}
 
   /**
   * 2.4 - ハッカソンレポ
@@ -153,6 +178,7 @@
   .lecture-item{
     flex-direction: column;
     width: 320px;
+    height: 580px;
     flex-shrink: 0;
     margin: 0;
     padding: 40px 0;
@@ -175,13 +201,13 @@
   .lecImg2{
     width: 280px;
     height: 100%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     
   }
 
   .lecImg3{
     width: 280px;
-    border-radius: 10px ;
+    /* border-radius: 10px ; */
   }
   
   .lecture-item:nth-of-type(odd) .lecture-itemImage{

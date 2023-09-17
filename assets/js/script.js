@@ -16,6 +16,38 @@ console.log(header);
 
 //ハッカソンレポ
 
+var access = $.cookie('access')
+	if(!access){
+		flag = true;
+		$.cookie('access', false);
+	}else{
+		flag = false	
+	}
+	
+	$(".modal-open").modaal({
+	start_open:flag, 
+	overlay_close:true,
+	before_open:function(){
+		$('html').css('overflow-y','hidden');
+	},
+	after_close:function(){
+		$('html').css('overflow-y','scroll');
+	}
+	});
+
+
+
+
+$(".modal-open2").modaal({
+start_open:flag, 
+overlay_close:true,
+before_open:function(){
+    $('html').css('overflow-y','hidden');
+},
+after_close:function(){
+    $('html').css('overflow-y','scroll');
+}
+});
 
 
 //リマインド
@@ -23,9 +55,12 @@ const addMemoButton = document.querySelector('.add-memo');
 addMemoButton.addEventListener('click',function(){
     const newMemoInput = document.querySelector('.new-memo');
     const memoValue = newMemoInput.value;
-    console.log(memoValue);
+
     const newMemo = document.createElement('li');
     newMemo.textContent = newMemoInput.value;
+
+    // 新しいクラスを追加
+    newMemo.classList.add('memo-text');
 
     const memoList = document.querySelector('.memo-list');
     memoList.append(newMemo);
