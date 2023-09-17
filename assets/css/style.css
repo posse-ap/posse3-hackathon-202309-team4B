@@ -406,7 +406,7 @@ body{
 .memoItem {
     background-color: #f8f8f8;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 1000px;
     padding: 20px;
     margin: 10px auto;
