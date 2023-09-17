@@ -1,3 +1,6 @@
+main{
+    margin-top: 100px;
+}
 
 /* ヘッダー */
 .header{ 
@@ -66,34 +69,156 @@
 .section-body{
     margin-top: 40px;
     display: flex;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
     position: relative;
 }
 
 .title{
-    text-align: center;
-    font-size: 25px;
-    letter-spacing: .05em;
-    display: block;
-    font-weight: bold;
-    width: fit-content;
-    position: relative;
-    margin: 0 auto;
+    font-size: 36px; /* フォントサイズ */
+    font-weight: bold; /* 太字 */
+    color: #333; /* テキストの色 */
+    text-align: center; /* 中央寄せ */
+    margin: 20px 0; /* 上下のマージン */
+    text-transform: uppercase; /* テキストを大文字に変換 */
+    letter-spacing: 2px; /* 文字間隔を調整 */
 }
 
-.title::after{
-    content: "";
-    display: block;
-    height: 3px;
-    width: 100%;
-    background-image: linear-gradient(to right, #fff 0%, rgb(242, 94, 2) 50%, #fff 100%);
-    position: absolute;
+.title{
+    background-color: #0077b6; /* 背景色 */
+    color: #fff; /* テキストの色 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* テキストの影 */
+    padding: 10px 20px; /* 内側の余白 */
+    border-radius: 10px; /* 角丸 */
 }
+
+.leadItem{
+    font-size: 24px; /* フォントサイズ */
+    font-weight: bold; /* 太字 */
+    color: #333; /* テキストの色 */
+    text-align: center; /* 中央寄せ */
+    margin: 20px 0; /* 上下のマージン */
+}
+
+.leadItem::after {
+    content: ''; /* 疑似要素の内容 */
+    display: block; /* ブロック要素として表示 */
+    width: 50px; /* 下線の幅 */
+    height: 2px; /* 下線の高さ */
+    background-color: #0077b6; /* 下線の色 */
+    margin: 10px auto; /* 下線の中央寄せと上下のマージン */
+}
+
+
 
 /* メインページ */
+.mainVisual{
+    height: 200px;
+    width: 200px;
+    padding: 40px 24px;
+    /*display: flex;
+    align-items: flex-end;*/
+}
 
+/* .mainVisual-head {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  } */
 
+  .mainVisual-title{
+    background-color: #ffffff;
+   color: #0071bc;
+   font-weight: bold;
+   line-height: 1.8;
+   letter-spacing: 0.05em;
+   font-size: 24px;
+   padding-left: 20px;
+   padding-right: 4px;
+  }
 /* リマインド */
+
+
+.recture-list{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.recture-item{
+    display: flex;
+    background-color: var(--primary-light-color);
+    border-radius: 10px;
+    min-height: 324px;
+    margin-top: 40px;
+}
+
+.recture-item:nth-of-type(odd){
+    flex-direction: row-reverse;
+    margin-right: 40px;
+}
+
+.recture-item:nth-of-type(even){
+    margin-left: 40px;
+}
+
+.recture-itemImage{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 480px;
+    height: 320px;
+    flex-shrink: 0;
+    margin-top: -40px;
+}
+
+.recture-itemImage img{
+    object-fit: cover;
+}
+
+.recture-item:nth-of-type(odd) .daily-itemImage{
+    margin-right: -40px;
+}
+
+.recture-item:nth-of-type(even) .daily-itemImage{
+    margin-left: -40px;
+}
+
+.recture-itemBody{
+    padding: 48px 56px;
+    width: 100%;
+}
+
+.recture-titleNumber{
+    font-weight: bold;
+    font-size: 58px;
+    color: var(--primary-color);
+    line-height: 1;
+    letter-spacing: 0.05em;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.recture-titleText{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    margin-left: 20px;
+}
+
+.rectureOutline{
+    /* margin-top: 40px; */
+}
+
+.recture-description{
+    font-weight: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    margin-top: 12px;
+}
+
 
 /* ハッカソンレポ */
 .hackathon-sectionbody{
@@ -118,26 +243,28 @@
     margin: 30px 0;
     table-layout: fixed;
     width: 100%;
-  }
-  .winner-img {
+}
+.winner-img {
     display: table-cell;
     vertical-align: top;
     width: 100px;
-  }
-  .winner-img img {
+}
+.winner-img img {
     border-radius: 50%;
     width: 100px;
+
   }
   .winner-talk{
     background-color: rgb(159, 192, 231);
+
     border-bottom: 1px solid #ddd;
     border-radius: 8px;
     display: table-cell;
     padding: 10px;
     position: relative;
     font-size: 30px;
-  }
-  .winner-talk-left:after {
+}
+.winner-talk-left:after {
     content: '';
     position: absolute;
     border-right: 12px solid rgb(159, 192, 231);
@@ -145,8 +272,11 @@
     border-bottom: 12px solid transparent;
     left: -12px;
     top: 40px;
+
   }
   /* .winner-talk-right:after {
+=======
+
     content: '';
     position: absolute;
     border-left: 12px solid #fff;
@@ -154,9 +284,11 @@
     border-bottom: 12px solid transparent;
     right: -12px;
     top: 40px;
+
   } */
 
   /* .winner-talk p {
     line-height: 1.4;
     margin: 0;
   } */
+
