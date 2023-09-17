@@ -15,43 +15,29 @@ console.log(header);
 // メインページ
 
 //ハッカソンレポ
+// 杏美が書いたよ
 
-var access = $.cookie('access')
-	if(!access){
-		flag = true;
-		$.cookie('access', false);
-	}else{
-		flag = false	
-	}
-	
-	$(".modal-open").modaal({
-	start_open:flag, 
-	overlay_close:true,
-	before_open:function(){
-		$('html').css('overflow-y','hidden');
-	},
-	after_close:function(){
-		$('html').css('overflow-y','scroll');
-	}
-	});
+var scrollPosition;
 
 
-
-
-$(".modal-open2").modaal({
-start_open:flag, 
-overlay_close:true,
-before_open:function(){
-    $('html').css('overflow-y','hidden');
-},
-after_close:function(){
-    $('html').css('overflow-y','scroll');
-}
+$('.js-modal-open').on('click', function(){
+scrollPosition = $(window).scrollTop();
+$('body').addClass('fixed').css({'top': -scrollPosition});
+$('.js-modal').fadeIn();
+return false;
 });
 
 
+$('.js-modal-close').on('click', function(){
+$('body').removeClass('fixed');
+window.scrollTo( 0 , scrollPosition );
+$('.js-modal').fadeOut();
+return false;
+});
+
 //リマインド
 const addMemoButton = document.querySelector('.add-memo');
+
 addMemoButton.addEventListener('click',function(){
     const newMemoInput = document.querySelector('.new-memo');
     const memoValue = newMemoInput.value;
@@ -65,7 +51,7 @@ addMemoButton.addEventListener('click',function(){
     const memoList = document.querySelector('.memo-list');
     memoList.append(newMemo);
 });
-
+// なつき
 const lectureSlideOptions = {
     type: 'loop',
     gap:40,
