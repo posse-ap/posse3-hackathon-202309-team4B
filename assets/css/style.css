@@ -1,5 +1,6 @@
 main{
     margin-top: 100px;
+    background-color: #faf5e0;
 }
 
 /* ヘッダー */
@@ -128,16 +129,16 @@ main{
     align-items: flex-start;
   } */
 
-  .mainVisual-title{
+.mainVisual-title{
     background-color: #ffffff;
-   color: #0071bc;
-   font-weight: bold;
-   line-height: 1.8;
-   letter-spacing: 0.05em;
-   font-size: 24px;
-   padding-left: 20px;
-   padding-right: 4px;
-  }
+    color: #0071bc;
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    font-size: 24px;
+    padding-left: 20px;
+    padding-right: 4px;
+}
 /* リマインド */
 
 
@@ -145,24 +146,22 @@ main{
     padding-top: 40px;
     display: flex;
     flex-direction: column;
-    gap: 120px;
+    gap: 40px;
 }
 
 .recture-item{
     display: flex;
-    background-color: var(--primary-light-color);
+    background-color: #b4d1be;
     border-radius: 10px;
     min-height: 324px;
-    margin-top: 40px;
+    margin: 0 200px;
 }
 
 .recture-item:nth-of-type(odd){
     flex-direction: row-reverse;
-    margin-right: 40px;
 }
-
-.recture-item:nth-of-type(even){
-    margin-left: 40px;
+.daily-item:nth-of-type(even){
+    /* margin-left: 40px; */
 }
 
 .recture-itemImage{
@@ -178,11 +177,11 @@ main{
     object-fit: cover;
 }
 
-.recture-item:nth-of-type(odd) .daily-itemImage{
+.recture-item:nth-of-type(odd) .recture-itemImage{
     margin-right: -40px;
 }
 
-.recture-item:nth-of-type(even) .daily-itemImage{
+.recture-item:nth-of-type(even) .recture-itemImage{
     margin-left: -40px;
 }
 
@@ -194,7 +193,7 @@ main{
 .recture-titleNumber{
     font-weight: bold;
     font-size: 58px;
-    color: var(--primary-color);
+    color: #ab8424;
     line-height: 1;
     letter-spacing: 0.05em;
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -222,7 +221,7 @@ main{
 
 /* ハッカソンレポ */
 .hackathon-sectionbody{
-  margin: 50px;
+    margin: 50px;
 }
 
 
