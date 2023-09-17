@@ -23,13 +23,13 @@ main{
 }
 
 .header-logo{
-    width: flex; 
+    width: flex;
     margin-left: 80px;
 }
 
 .header-nav{
     display: flex;
-    align-items: center; 
+    align-items: center;
     margin-left: auto;
     margin-right: 120px;
 }
@@ -85,13 +85,13 @@ main{
 }
 
 .title{
-    font-size: 36px; 
-    font-weight: bold; 
-    color: #333; 
-    text-align: center; 
-    margin: 20px 0; 
-    text-transform: uppercase; 
-    letter-spacing: 2px; 
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .title{
@@ -121,7 +121,7 @@ main{
 .leadItem::before {
 	content: attr(data-en);
 	position: absolute;
-	top: -20px;
+	top: -15px;
 	left: 50%;
 	transform: translateX(-50%);
 	color: rgba(224,66,114,0.2);
@@ -140,19 +140,19 @@ main{
 	background-color: rgba(224,66,114,1);
 }
 
-
 .mainVisual-inner {
     max-width: 980px;
     width: 100%;
     margin: 0 auto;
 }
-
 .mainVisual-head {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     gap: 12px;
     align-items: flex-start;
 }
+
+
 
 /**
 メインページ 
@@ -173,7 +173,6 @@ main{
     font-weight: bold;
     color: #fff;
 }
-
 
 .mainVisual-title{
     background-color: #ffffff00;
@@ -304,7 +303,7 @@ main{
     letter-spacing: 0.05em;
     margin-left: 20px;
     }
-    
+
 .lectureOutline{
     margin-top: 40px;
 }
@@ -454,7 +453,6 @@ main{
     padding: 10px;
     position: relative;
     font-size: 30px;
-    
 }
 .winner-talk-left:after {
     content: '';
@@ -507,3 +505,4 @@ main{
     align-items: center;
     font-size: 22px;
 }
+
