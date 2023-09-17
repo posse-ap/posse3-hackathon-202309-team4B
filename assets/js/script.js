@@ -1,3 +1,4 @@
+//まどかが書いた
 //ヘッダー
 //ヘッダー・ボタンの要素を取得
 const header = document.getElementById('js-header');
@@ -35,7 +36,54 @@ $('.js-modal').fadeOut();
 return false;
 });
 
+
+//まどか
+$('.js-modal-open2').on('click', function(){
+    scrollPosition = $(window).scrollTop();
+    $('body').addClass('fixed').css({'top': -scrollPosition});
+    $('.js-modal2').fadeIn();
+    return false;
+    });
+    
+    
+    $('.js-modal-close').on('click', function(){
+    $('body').removeClass('fixed');
+    window.scrollTo( 0 , scrollPosition );
+    $('.js-modal2').fadeOut();
+    return false;
+    });
+
+$('.js-modal-open3').on('click', function(){
+scrollPosition = $(window).scrollTop();
+$('body').addClass('fixed').css({'top': -scrollPosition});
+$('.js-modal3').fadeIn();
+return false;
+});
+
+
+$('.js-modal-close').on('click', function(){
+$('body').removeClass('fixed');
+window.scrollTo( 0 , scrollPosition );
+$('.js-modal3').fadeOut();
+return false;
+});
+
+$('.js-modal-open4').on('click', function(){
+    scrollPosition = $(window).scrollTop();
+    $('body').addClass('fixed').css({'top': -scrollPosition});
+    $('.js-modal4').fadeIn();
+    return false;
+    });
+    
+    
+    $('.js-modal-close').on('click', function(){
+    $('body').removeClass('fixed');
+    window.scrollTo( 0 , scrollPosition );
+    $('.js-modal4').fadeOut();
+    return false;
+    });
 //リマインド
+//まどか担当
 const addMemoButton = document.querySelector('.add-memo');
 
 addMemoButton.addEventListener('click',function(){
@@ -72,7 +120,9 @@ new Splide('#js-lectureSlide', lectureSlideOptions).mount();
 
 
 
+
 const animatedTexts = document.querySelectorAll('.animated-text');                     /*L75~90 by持丸*/
+
         let isAnimationPlaying = false;
 
         function toggleAnimation() {
