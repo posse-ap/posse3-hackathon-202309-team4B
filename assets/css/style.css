@@ -36,6 +36,7 @@ body{
     align-items: center;
     margin-left: auto;
     margin-right: 120px;
+    transition: visibility .3s linear, opacity .3s linear;
 }
 
 .header-navList{
@@ -53,6 +54,22 @@ body{
     display: flex;
 }
 
+.header.is-transparent {
+    background-color: transparent;
+    border: none;
+}
+
+.header.is-transparent:not(.is-open) .header-logo {
+    filter: brightness(10);
+}
+
+.header.is-transparent:not(.is-open) .header-navLink {
+    color: #FFFFFF;
+}
+
+.header.is-transparent:not(.is-open) .header-snsLink {
+    filter: brightness(10);
+}
 /**
 フッター 
  **/
@@ -146,7 +163,9 @@ body{
 **/
 .mainVisual{
     height: 550px;
-    margin-top: -20px;
+    margin-top: -100px;
+    /* position: relative; */
+
     background: url(../img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
     opacity: 0.5;
 }
@@ -176,17 +195,6 @@ body{
     font-size: 60px;
     padding: 0 10px;
 }
-/* .mainVisual-title2{
-    background-color: #ffffff;
-    color: #fff201;
-    font-weight: bold;
-    line-height: 1.8;
-    letter-spacing: 0.05em;
-    font-size: 50px;
-    padding: 0 10px;
-    margin-left: 220px;
-} */
-.text-column
 
 .about-text{
     color: rgb(23, 20, 20);
@@ -214,7 +222,7 @@ body{
 }
 
 .advice-item{
-    margin: 48px 64px;
+    margin: 30px 64px;
     background-color: #fcf9de;
     padding: 20px;
     width: 550px;
@@ -409,7 +417,7 @@ body{
 .memoItem {
     background-color: #f8f8f8;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 1000px;
     padding: 20px;
     margin: 10px auto;
@@ -418,6 +426,7 @@ body{
 
 /* メモタイトル */
 .memo-title {
+    text-align: center;
     font-size: 24px;
     margin: 0;
     color: #333;
@@ -431,7 +440,11 @@ body{
     flex-direction: column;
     padding: 0 100px 0;
 }
-
+.memo-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* メモ入力フィールド */
 .new-memo {
     width: 100%;
@@ -439,7 +452,10 @@ body{
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 33px;
+}
+.memo-text{
+    text-align: center;
 }
 
 /* メモ追加ボタン */
@@ -474,6 +490,21 @@ body{
 
 .memo-text:last-child {
     margin-bottom: 0;
+}
+
+.inform-item{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e8884d;
+    width: 400px;
+    height: 50px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 
