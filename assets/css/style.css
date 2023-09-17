@@ -139,6 +139,15 @@ main{
 	height: 40px;
 	background-color: rgba(224,66,114,1);
 }
+/**
+メインページ 
+**/
+.mainVisual{
+    height: 550px;
+    margin-top: -20px;
+    /* position: relative; */
+    background: url(../img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
+}
 
 .mainVisual-inner {
     max-width: 980px;
@@ -148,41 +157,30 @@ main{
 .mainVisual-head {
     display: inline-flex;
     flex-direction: column;
+    margin-top: 300px;
     gap: 12px;
-    align-items: flex-start;
-}
-
-
-
-/**
-メインページ 
-**/
-.mainVisual{
-    height: 550px;
-    margin-top: -20px;
-    position: relative;
-    background: url(../img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
-}
-
-.mainVisual-lead {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-weight: bold;
-    color: #fff;
+    align-items: center;
+    margin-left: 220px;
 }
 
 .mainVisual-title{
-    background-color: #ffffff00;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #ff0000;
     font-weight: bold;
     line-height: 1.8;
     letter-spacing: 0.05em;
-    font-size: 55px;
-    padding-left: 20px;
-    padding-right: 4px;
+    font-size: 50px;
+    padding: 0 10px;
+}
+.mainVisual-title2{
+    background-color: #ffffff;
+    color: #fff201;
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    font-size: 50px;
+    padding: 0 10px;
+    margin-left: 220px;
 }
 
 .about-text{
