@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header class="header" id="js-header">
+    <header class="header is-open" id="js-header">
         <a href="../index.html" class="header-logo">
             <img src="../assets/img/logo.svg" alt="POSSE" />
         </a>
@@ -23,6 +23,9 @@
         </button>
         <nav class="header-nav">
             <ul class="header-navList">
+                <li class="header-navItem">
+                    <a href="../index.html" class="header-navLink">メイン</a>
+                </li>
                 <li class="header-navItem">
                     <a href="./" class="header-navLink">ハッカソンレポ</a>
                 </li>
@@ -59,7 +62,7 @@
                 <h1 class="title">Hackathon</h1>
             </div>
             <div class="hackathon-sectionbody">
-                <h2 class="leadItem">優勝者インタビュー</h2>
+                <h2 class="leadItem" data-en="Interview">優勝者インタビュー</h2>
                 <div class="winnerInterview">
                     <figure class="winnerInterview-img">
                         <img src="/assets/img/winner.jpg" alt="">
@@ -154,11 +157,13 @@
 
 
 
+<footer class="footer">
+        <div class="footer-copyright">
+            <small lang="en">&copy; 2023 POSSE all rights reserved</small>
+        </div>
+    </footer>
+
+
 </body>
 
-<footer class="footer">
-    <div class="footer-copyright">
-        <small lang="en">&copy; 2023 POSSE all rights reserved</small>
-    </div>
-</footer>
 </html>
