@@ -300,6 +300,7 @@ body{
     display: flex;
     justify-content: center;
     gap: 50px;
+    margin-bottom: 25px;
 }
 
 .button-item{
