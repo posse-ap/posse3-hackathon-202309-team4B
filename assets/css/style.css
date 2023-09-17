@@ -309,6 +309,8 @@ body{
 .linkButton{
     font-size: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .button-item:hover{
@@ -643,6 +645,7 @@ body{
     background: rgba(0, 0, 0, 0.8);
     z-index: 5;
 }
+
 
 .modal-content{
     position: absolute;
