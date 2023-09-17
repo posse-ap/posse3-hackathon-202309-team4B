@@ -70,10 +70,8 @@ main{
 共通項目 
 **/
 .section {
-
   /* padding-top: 80px; */
-  margin-top: -20px;
-
+    margin-top: -20px;
 }
 
 .section-body {
@@ -454,4 +452,3 @@ main{
 }
 
 
-}
