@@ -182,9 +182,11 @@ main{
     padding: 0 10px;
     margin-left: 220px;
 }
-
+.text-column
 .about-text{
-    font-size: 14px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
     line-height: 1.8;
     letter-spacing: 0.05em;
     flex-direction: column;
@@ -201,10 +203,59 @@ main{
     height: 100vh;
     justify-content: space-evenly;
 }
+.advice-list{
 
-.leader{
-    color: ;
 }
+.advice-item{
+
+}
+.leader::before{
+    
+}
+.leader{
+    color: black;
+}
+.follower{
+    color: black;
+}
+
+/* styles.css もっちーここから*/
+
+@keyframes left-animation {
+    0% { transform: translateX(-100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes right-animation {
+    0% { transform: translateX(100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.animated-text {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.left-text {
+    animation-name: left-animation;
+    animation-delay: 0.5s; /* 適宜遅延を調整 */
+}
+
+.right-text {
+    animation-name: right-animation;
+    animation-delay: 0.5s; /* 適宜遅延を調整 */
+}
+
+
 
 .square{
     width: 48px;
