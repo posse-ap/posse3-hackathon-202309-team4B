@@ -1,9 +1,24 @@
+//ヘッダー
+//ヘッダー・ボタンの要素を取得
+const header = document.getElementById('js-header');
+const button = document.getElementById('js-headerButton');
+
+//ボタンをクリックした時の処理
+button.addEventListener('click',function(){
+    header.classList.toggle("is-open");
+});
+
+console.log(header);
+
+
+
 // メインページ
 
 //ハッカソンレポ
 
-//リマインド
 
+
+//リマインド
 const addMemoButton = document.querySelector('.add-memo');
 addMemoButton.addEventListener('click',function(){
     const newMemoInput = document.querySelector('.new-memo');
@@ -16,7 +31,7 @@ addMemoButton.addEventListener('click',function(){
     memoList.append(newMemo);
 });
 
-const dailySlideOptions = {
+const rectureSlideOptions = {
     type: 'loop',
     gap:40,
     padding: {left:28, right:28 },
@@ -27,3 +42,5 @@ const dailySlideOptions = {
         },
     },
 }
+
+new Splide('#js-rectureSlide', dailySlideOptions).mount();
