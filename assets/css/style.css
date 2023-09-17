@@ -154,9 +154,9 @@ main{
 
 /* メインページ */
 .mainVisual{
-    height: 400px;
+    height: 550px;
     position: relative;
-    background: url(../img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg);
+    background: url(../img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
     /*display: flex;
     align-items: flex-end;*/
 }
@@ -176,15 +176,14 @@ main{
 }
 
 .mainVisual-title{
-    background-color: #ffffff;
-    color: #0071bc;
+    background-color: #ffffff00;
+    color: #ffffff;
     font-weight: bold;
     line-height: 1.8;
     letter-spacing: 0.05em;
-    font-size: 24px;
+    font-size: 55px;
     padding-left: 20px;
     padding-right: 4px;
-    position: absolute;
 }
 /* リマインド */
 
