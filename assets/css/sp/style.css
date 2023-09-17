@@ -146,15 +146,16 @@
     display: flex;
     align-items: flex-end;
     background-image: url(/assets/img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
-    height: 700px;
+    height: 350px;
     padding: 16px 12px;
-    margin-top: -60px;
+    opacity: 0.5;
+    margin-top: -100px;
+
 }
 .mainVisual-inner{
     max-width: 980px;
     width: 100%;
     margin: 0 auto;
-    padding-right: 5px;
   }
   .mainVisual-head {
     display: inline-flex;
@@ -167,13 +168,14 @@
 }
 .mainVisual-title{
     font-size: 40px;
-    color: rgb(255, 0, 0);
-    background-color: #ffffff;
+    color: red;
     font-weight: bold;
     line-height: 1.8;
     letter-spacing: .05em;
     margin-right: 70px;
+    
 }
+
 .mainVisual-title2{
   font-size: 40px;
   color: rgb(238, 255, 0);
@@ -192,7 +194,7 @@
 .about-gn{
   height: 500px;
   padding-top: 30px;
-  margin: 0;
+  margin: 0 10px;
 }
 
 .advice-list{
@@ -268,6 +270,19 @@
 .privacyInfo-exp{
   font-size: 16px;
 }
+
+.modal-content{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-57%, -50%);
+    overflow: scroll;
+    width: 100%;
+    background: white;
+    padding: 40px;
+    
+
+
   /**
   * 2.5 - リマインド
   */
@@ -368,6 +383,10 @@
 .memo-text{
   text-align: center;
 }
+
+  .inform-item{
+    width: 300px;
+  }
 
   .splide__track{
     overflow: visible;

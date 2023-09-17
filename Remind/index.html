@@ -131,33 +131,6 @@
                 </div>
             </div>
         </section>
-        <section class="section">
-            <div class="section-body">
-                <ul class="inform-list">
-                    <li class="inform-slide">
-                        <div class="inform-item1"></div>
-                        <div class="inform-item2">
-                            <!-- <div class="inform-outline">宿泊名簿の記載期限まであと2日!</div> -->
-                            <div class="inform-text"></div>
-                        </div>
-                    </li>
-                    <li class="inform-slide">
-                        <div class="inform-item1"></div>
-                        <div class="inform-item2">
-                            <div class="inform-outline"></div>
-                            <div class="inform-text"></div>
-                        </div>
-                    </li>
-                    <li class="inform-slide">
-                        <div class="inform-item1"></div>
-                        <div class="inform-item2">
-                            <div class="inform-outline"></div>
-                            <div class="inform-text"></div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
         <section class="memoItem">
             <div class="memo-head">
                 <h3 class="memo-title">質問リスト・メモ</h3>
@@ -172,6 +145,33 @@
                 </ul>
             </div>
         </section>
+        <section class="section">
+            <div class="section-head">
+                <h2 class="leadItem" data-en="DeadLine">締切一覧</h2>
+            </div>
+            <div class="section-body">
+                <ul class="inform-list">
+                    <li class="inform-slide">
+                        <div class="inform-item">
+                            <a href="https://forms.gle/ByLCY5EaF3THC6MD7" target="_blank" rel="noopener noreferrer">4期生サバリ応募フォーム</a>
+                        </div>
+                        <div class="inform-text"></div>
+                    </li>
+                    <li class="inform-slide">
+                        <div class="inform-item">
+                            <a href="https://forms.gle/uCPZcejPXhBAsX3R7" target="_blank" rel="noopener noreferrer">JOBer養成インターン応募フォーム</a>
+                        </div>
+                        <div class="inform-text"></div>
+                    </li>
+                    <li class="inform-slide">
+                        <div class="inform-item">
+                            <a href="https://forms.gle/VXp3smduGABgJd8x9" target="_blank" rel="noopener noreferrer">Commune要請インターン応募フォーム</a>
+                        </div>
+                        <div class="inform-text"></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
         
         <div class="square">Top</div>
         <script>
@@ -179,7 +179,7 @@
               $('.square').hide();
               $(window).scroll(function() {
                 if ($(this).scrollTop() > 400) {
-                  $('.square').fadeIn();
+                    $('.square').fadeIn();
                 } else {
                     $('.square').fadeOut();
                 }

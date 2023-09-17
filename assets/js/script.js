@@ -1,4 +1,5 @@
 //まどかが書いた
+//なつきがヘッダーの透過
 //ヘッダー
 //ヘッダー・ボタンの要素を取得
 const header = document.getElementById('js-header');
@@ -9,6 +10,15 @@ button.addEventListener('click',function(){
     header.classList.toggle("is-open");
 });
 
+const mainVisual = document.getElementById('js-mainVisual');
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > mainVisual.clientHeight - header.clientHeight) {
+        header.classList.remove("is-transparent");
+    } else {
+        header.classList.add("is-transparent");
+    }
+});
 console.log(header);
 
 
