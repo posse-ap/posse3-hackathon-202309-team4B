@@ -4,8 +4,10 @@ main{
     background-color: #faf5e0;
 }
 
-/* ヘッダー */
-.header{
+/** 
+ヘッダー 
+**/
+.header{ 
     display: flex;
     align-items: center;
     height: 80px;
@@ -47,7 +49,9 @@ main{
     display: flex;
 }
 
-/* フッター */
+/**
+フッター 
+ **/
 .footer {
     padding-top: 40px 0px 40px;
 }
@@ -62,21 +66,22 @@ main{
     padding: 24px;
 }
 
-/* 共通 */
+/** 
+共通項目 
+**/
 .section {
-
   /* padding-top: 80px; */
     margin-top: -20px;
-
 }
 
 .section-body {
-    margin-top: 40px;
+    /* margin-top: 40px; */
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     position: relative;
+    /* gap: ; */
 }
 
 .title{
@@ -135,16 +140,6 @@ main{
 	background-color: rgba(224,66,114,1);
 }
 
-/* メインページ */
-
-.mainVisual{
-    height: 650px;
-    margin-top: -20px;
-    /* position: relative; */
-    background-image: url() center center / cover no-repeat;
-    display: flex;
-    align-items: flex-end;
-}
 .mainVisual-inner {
     max-width: 980px;
     width: 100%;
@@ -155,27 +150,18 @@ main{
     flex-direction: column;
     gap: 12px;
     align-items: flex-start;
-    /* display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: flex-start;*/
 }
-.mainVisual-title{
-    background-color: #ffffff00;
-    color: #ffffff;
-    font-weight: bold;
-    line-height: 1.8;
-    letter-spacing: 0.05em;
-    font-size: 24px;
-    padding-left: 20px;
-    padding-right: 4px; 
-    /* background-color: #fff;
-    font-weight: bold;
-    line-height: 1.8;
-    letter-spacing: .05em;
-    font-size: 60px;
-    padding-left: 20px; */
 
+
+
+/**
+メインページ 
+**/
+.mainVisual{
+    height: 550px;
+    margin-top: -20px;
+    position: relative;
+    background: url(../img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
 }
 
 .mainVisual-lead {
@@ -188,8 +174,27 @@ main{
     color: #fff;
 }
 
+.mainVisual-title{
+    background-color: #ffffff00;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    font-size: 55px;
+    padding-left: 20px;
+    padding-right: 4px;
+}
 
+.wrapper{
+    
+}
 
+.about-text{
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
 
 .square{
     width: 32px;
@@ -208,7 +213,7 @@ main{
 .linkButton{
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #e8884d;
     color: #fff;
     text-decoration: none;
     border: none;
@@ -217,26 +222,30 @@ main{
 }
 
 .linkButton:hover{
-    background-color: #0056b3;
+    background-color: #b96109;
 }
 
-/* リマインド */
 
 
+
+/** 
+リマインドページ 
+**/
 .lecture-list{
+
     padding-top: 40px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    /* gap: 40px; */
 }
 
 .lecture-item{
     display: flex;
     background-color: #b4d1be;
     border-radius: 10px;
-    min-height: 324px;
-    margin: 0 200px;
-    padding: 40px 20px 20px 0;
+    min-height: 150px;
+    margin: 40px 200px;
+    padding: 20px 20px 5px 0;
 }
 
 .lecture-item:nth-of-type(odd){
@@ -246,22 +255,34 @@ main{
 .lecture-itemImage {
     border-radius: 10px;
     overflow: hidden;
-    width: 480px;
-    height: 320px;
+    width: 350px;
+    height: 230px;
     flex-shrink: 0;
     /* margin-top: -40px; */
 }
 
-/*.lecture-item:nth-of-type(odd) .lecture-itemImage{
-    /* margin-right: -40px;
-}*/
+.lecImg1{
+
+}
+
+.lecImg2{
+    border-radius: 45px;
+}
+
+.lecImg3{
+    border-radius: 10px ;
+}
+
+.lecture-item:nth-of-type(odd) .lecture-itemImage{
+    /* margin-right: -40px; */
+}
 
 .lecture-item:nth-of-type(even) .lecture-itemImage{
     margin-left: -40px;
 }
 
 .lecture-itemBody {
-    padding: 48px 56px;
+    padding: 40px 56px;
     width: 100%;
 }
 
@@ -294,18 +315,97 @@ main{
     margin-top: 12px;
 }
 
+/*メモアイテム全体*/
+.memoItem {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 1000px;
+    
+    padding: 20px;
+    margin: 10px auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* メモタイトル */
+.memo-title {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+/* メモボディ */
+.memo-body {
+    display: flex;
+    gap: 100px;
+    margin-top: 10px;
+}
+
+/* メモ入力フィールド */
+.new-memo {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* メモ追加ボタン */
+.add-memo {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-memo:hover {
+    background-color: #005b8b;
+}
+
+/* メモリスト */
+.memo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* メモアイテム */
+.memo-text {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.memo-text:last-child {
+    margin-bottom: 0;
+}
 
 
-/* ハッカソンレポ */
+
+/**
+ハッカソンレポ 
+**/
 
 .question{
     padding-left: 150px;
     padding-top: 20px;
     font-size: 30px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.winnerInterview{
+    max-width: 100%;
+    text-align: center;
 }
 
 .winnerInterview-img{
-    max-width: 100%;
+    box-shadow: #333;
 }
 
 .explain{
@@ -342,7 +442,7 @@ main{
 
 
 .comment{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .winner-talk{
@@ -365,7 +465,44 @@ main{
 
 }
 
-.answerbox{
+.answerBox{
     margin-left: 25%;
+}
+
+#info{
+	display: none;
+}
+
+.modaal-container{
+    max-width: 600px;
+}
+
+.modaal-close:after, 
+.modaal-close:before{
+	background:#ccc;	
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+	background:#666;
+}
+
+.privacy{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.privacy-info{
+    display: flex;
+    height: 100px;
+    width: auto;
+}
+.privacyInfo-exp{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
 }
 
