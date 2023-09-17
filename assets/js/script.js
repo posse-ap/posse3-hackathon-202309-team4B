@@ -51,7 +51,7 @@ addMemoButton.addEventListener('click',function(){
     const memoList = document.querySelector('.memo-list');
     memoList.append(newMemo);
 });
-
+// なつき
 const lectureSlideOptions = {
     type: 'loop',
     gap:40,
