@@ -187,7 +187,7 @@ body{
 }
 .text-column
 .about-text{
-    color: black;
+    color: rgb(23, 20, 20);
     font-size: 25px;
     font-weight: bold;
     line-height: 1.8;
@@ -199,27 +199,30 @@ body{
 }
 
 .about-gn{
-    /* display: flex;
+     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    justify-content: space-evenly; */
+    justify-content: space-evenly;
+    background-color: #cf9797;
+    border-radius: 28px;
 }
-.advice-list{
 
-}
 .advice-item{
+    margin: 64px;
+}
 
-}
-.leader::before{
-    
-}
 .leader{
-    color: black;
+    color: rgb(23, 20, 20);
+    font-weight: bold;
+    font-size: 20px;
 }
+
 .follower{
-    color: black;
+    color: rgb(23, 20, 20);
+    font-weight: bold;
+    font-size: 20px;
 }
 
 /* styles.css もっちーここから*/
@@ -234,14 +237,6 @@ body{
     100% { transform: translateX(0); opacity: 1; }
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
 .animated-text {
     animation-duration: 2s;
     animation-fill-mode: both;
@@ -250,12 +245,12 @@ body{
 
 .left-text {
     animation-name: left-animation;
-    animation-delay: 0.5s; /* 適宜遅延を調整 */
+    animation-delay: 1s; /* 適宜遅延を調整 */
 }
 
 .right-text {
     animation-name: right-animation;
-    animation-delay: 0.5s; /* 適宜遅延を調整 */
+    animation-delay: 1s; /* 適宜遅延を調整 */
 }
 
 
@@ -273,6 +268,7 @@ body{
     user-select: none;
     cursor: pointer;
     border-radius: 100%;
+    z-index: 10000;
 }
 
 .linkButton{
