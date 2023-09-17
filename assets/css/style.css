@@ -154,19 +154,26 @@ main{
 
 /* メインページ */
 .mainVisual{
-    height: 200px;
-    width: 200px;
-    padding: 40px 24px;
+    height: 400px;
+    position: relative;
+    background: url(../img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg);
     /*display: flex;
     align-items: flex-end;*/
 }
 
-/* .mainVisual-head {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: flex-start;
-  } */
+.mainVisual-lead {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.mainVisual-picture{
+    position: relative;
+}
 
 .mainVisual-title{
     background-color: #ffffff;
@@ -177,6 +184,7 @@ main{
     font-size: 24px;
     padding-left: 20px;
     padding-right: 4px;
+    position: absolute;
 }
 /* リマインド */
 
@@ -194,6 +202,7 @@ main{
     border-radius: 10px;
     min-height: 324px;
     margin: 0 200px;
+    padding: 40px 20px 20px 0;
 }
 
 .recture-item:nth-of-type(odd){
@@ -202,14 +211,13 @@ main{
 .daily-item:nth-of-type(even){
     /* margin-left: 40px; */
 }
-
 .recture-itemImage{
     border-radius: 10px;
     overflow: hidden;
     width: 480px;
     height: 320px;
     flex-shrink: 0;
-    margin-top: -40px;
+    margin-top: 50px;
 }
 
 .recture-itemImage img{
@@ -217,7 +225,7 @@ main{
 }
 
 .recture-item:nth-of-type(odd) .recture-itemImage{
-    margin-right: -40px;
+    /* margin-right: -40px; */
 }
 
 .recture-item:nth-of-type(even) .recture-itemImage{
