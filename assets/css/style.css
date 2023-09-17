@@ -221,19 +221,32 @@ main{
 
 
 /* ハッカソンレポ */
-.hackathon-sectionbody{
-  margin: 50px;
+
+
+
+
+.question{
+    padding-left: 150px;
+    padding-top: 20px;
+    font-size: 30px;
 }
 
-
 .winnerInterview-img{
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .explain{
-  font-size: 20px;
-  margin-top: 30px;
+    font-size: 20px;
+    margin-top: 30px;
+}
 
+.winnerQuestion {
+    justify-content: center;
+}
+
+.winnerName{
+    text-align: center;
+    font-weight: bold;
 }
 
 .winnerComment-box {
@@ -254,15 +267,20 @@ main{
     width: 100px;
 
   }
-  .winner-talk{
-    background-color: rgb(159, 192, 231);
 
+.comment{
+    font-size: 20px;
+}
+
+.winner-talk{
+    background-color: rgb(159, 192, 231);
     border-bottom: 1px solid #ddd;
     border-radius: 8px;
-    display: table-cell;
+    display: inline-block;
     padding: 10px;
     position: relative;
     font-size: 30px;
+    
 }
 .winner-talk-left:after {
     content: '';
@@ -271,24 +289,14 @@ main{
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
     left: -12px;
-    top: 40px;
+    top: 12px;
 
-  }
-  /* .winner-talk-right:after {
-=======
+}
 
-    content: '';
-    position: absolute;
-    border-left: 12px solid #fff;
-    border-top: 12px solid transparent;
-    border-bottom: 12px solid transparent;
-    right: -12px;
-    top: 40px;
 
-  } */
 
-  /* .winner-talk p {
-    line-height: 1.4;
-    margin: 0;
-  } */
+
+
+
+
 
