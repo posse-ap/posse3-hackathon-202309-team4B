@@ -214,14 +214,19 @@ body{
 }
 
 .leader{
-    color: rgb(23, 20, 20);
+    color: rgb(45, 30, 30);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .follower{
-    color: rgb(23, 20, 20);
+    color: rgb(45, 30, 30);
     font-weight: bold;
+    font-size: 24px;
+}
+
+.gn-text{
+    color: rgb(45, 30, 30);
     font-size: 20px;
 }
 
@@ -280,10 +285,13 @@ body{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .linkButton:hover{
     background-color: #b96109;
+    transform: scale(1.2);
 }
 
 
