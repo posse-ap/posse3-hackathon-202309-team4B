@@ -36,6 +36,7 @@ body{
     align-items: center;
     margin-left: auto;
     margin-right: 120px;
+    transition: visibility .3s linear, opacity .3s linear;
 }
 
 .header-navList{
@@ -53,6 +54,22 @@ body{
     display: flex;
 }
 
+.header.is-transparent {
+    background-color: transparent;
+    border: none;
+}
+
+.header.is-transparent:not(.is-open) .header-logo {
+    filter: brightness(10);
+}
+
+.header.is-transparent:not(.is-open) .header-navLink {
+    color: #FFFFFF;
+}
+
+.header.is-transparent:not(.is-open) .header-snsLink {
+    filter: brightness(10);
+}
 /**
 フッター 
  **/
@@ -146,7 +163,7 @@ body{
 **/
 .mainVisual{
     height: 550px;
-    margin-top: -20px;
+    margin-top: -100px;
     /* position: relative; */
     background: url(../img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
 }
