@@ -104,7 +104,6 @@ body{
     padding: 10px 20px; /* 内側の余白 */
     border-radius: 10px; /* 角丸 */
     margin-top: -20px;
-
 }
 
 .leadItem {
@@ -186,6 +185,7 @@ body{
     margin-left: 220px;
 }
 .text-column
+
 .about-text{
     color: rgb(23, 20, 20);
     font-size: 25px;
@@ -196,10 +196,11 @@ body{
     align-content: space-around;
     flex-wrap: wrap;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .about-gn{
-     display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -207,10 +208,15 @@ body{
     justify-content: space-evenly;
     background-color: #cf9797;
     border-radius: 28px;
+    margin: 0 300px;
 }
 
 .advice-item{
-    margin: 64px;
+    margin: 48px 64px;
+    background-color: #fcf9de;
+    padding: 20px;
+    width: 550px;
+    border-radius: 10px;
 }
 
 .leader{
@@ -256,8 +262,8 @@ body{
 
 
 .square{
-    width: 48px;
-    height: 48px;
+    width: 60px;
+    height: 60px;
     background-color: chocolate;
     color: #fff;
     text-align: center;
@@ -271,10 +277,22 @@ body{
     z-index: 10000;
 }
 
-.linkButton{
+.buttonSection{
+    margin-top: 40px;
+}
+
+.button-list{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.button-item{
     display: inline-block;
     padding: 10px 20px;
     background-color: #e8884d;
+    width: 200px;
+    height: 50px;
     color: #fff;
     text-decoration: none;
     border: none;
@@ -282,7 +300,12 @@ body{
     cursor: pointer;
 }
 
-.linkButton:hover{
+.linkButton{
+    font-size: 20px;
+    text-align: center;
+}
+
+.button-item:hover{
     background-color: #b96109;
 }
 
@@ -521,6 +544,7 @@ body{
     padding: 10px;
     position: relative;
     font-size: 30px;
+    z-index: 0;
 }
 .winner-talk-left:after {
     content: '';
@@ -534,6 +558,8 @@ body{
 }
 
 .answerBox{
+    display: flex;
+    flex-direction: column;
     margin-left: 25%;
 }
 .answerBox2{
@@ -576,59 +602,52 @@ body{
 .privacyInfo-exp{
     display: flex;
     align-items: center;
-  
+}
 
+*{
+    margin: 0;
+    padding: 0;
+}
+    
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+}
 
+.modal-bg{
+    position: absolute;
+    height: 100%;
+    width: 2000px;
+    margin-left: -600px;
+    /* height: 100vh;
+    width: 100%; */
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 5;
+}
 
+.modal-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    overflow: scroll; /* はみ出た部分はスクロールさせる */
+    /* これが無いと「overflow:scroll」が利かない */
+    width: 60%;/* これが無いと「overflow:scroll」が利かない */
+    background: white;
+    padding: 40px;
+    z-index: 10;
+}
 
-
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    
-   
-    .modal{
-        display: none;
-        position: fixed;
-        top: 0;
-        height: 100vh;
-        width: 100%;
-    }
-    
-    
-    .modal-bg{
-        position: absolute;
-        height: 100%;
-        width: 2000px;
-        margin-left: -600px;
-        /* height: 100vh;
-        width: 100%; */
-        background: rgba(0, 0, 0, 0.8);
-        z-index: 5;
-    }
-    
-    
-    .modal-content{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-100%, -50%);
-        overflow: scroll; /* はみ出た部分はスクロールさせる */
-        /* これが無いと「overflow:scroll」が利かない */
-        width: 60%;/* これが無いと「overflow:scroll」が利かない */
-        background: white;
-        padding: 40px;
-        z-index: 10;
-    }
-    
-    
-    body.fixed {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        left: 0;
-    }
+body.fixed {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
 .js-modal-close{
     display: flex;
     justify-content: end;
@@ -636,4 +655,3 @@ body{
     color: #0077b6;
 
 }
-
