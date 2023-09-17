@@ -34,7 +34,7 @@
     position: fixed;
     inset: 0;
     opacity: 0;
-    background-color: var(--primary-light-color);
+    background-color: #faf0be;
     flex-direction: column;
     padding: 120px 24px 40px;
     transition: visibility .3s liner, opacity .3s linear;
@@ -95,7 +95,7 @@
     align-items: center;
   }
   
-  .header-corporateLink{
+  /* .header-corporateLink{
     color: var(--gray-dark-color);
     font-size: 14px;
     display: flex;
@@ -110,10 +110,10 @@
     width: 14px;
     height: 14px;
     background: url(../../img/icon-external-link.svg) center center / contain no-repeat;
-  }
+  } */
 
   .header.is-transparent:not(.is-open) .header-buttonLine{
-    background-color: var(--white-color);
+    background-color: #fff;
   }
   
   /**
