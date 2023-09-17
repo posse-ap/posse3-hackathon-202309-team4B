@@ -266,7 +266,7 @@ main{
     border-radius: 50%;
     width: 100px;
 
-  }
+}
 
 .comment{
     font-size: 20px;
@@ -293,7 +293,9 @@ main{
 
 }
 
-
+.answerbox{
+    margin-left: 25%;
+}
 
 
 
