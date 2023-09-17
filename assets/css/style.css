@@ -2,6 +2,7 @@
 main{
     margin-top: 100px;
     background-color: #faf5e0;
+    padding-bottom: 60px;
 }
 body{
     color: #333333;
@@ -26,13 +27,13 @@ body{
 }
 
 .header-logo{
-    width: flex; 
+    width: flex;
     margin-left: 80px;
 }
 
 .header-nav{
     display: flex;
-    align-items: center; 
+    align-items: center;
     margin-left: auto;
     margin-right: 120px;
 }
@@ -55,12 +56,11 @@ body{
 /**
 フッター 
  **/
-.footer {
-    padding-top: 40px 0px 40px;
-}
+/* .footer {
+    padding-top: 40px;
+} */
 .footer-copyright {
     text-align: center;
-    margin-top: 24px;
     border-top: solid 1px;
     color: darkgrey;
     letter-spacing: 0.1em;
@@ -88,17 +88,16 @@ body{
 }
 
 .title{
-    font-size: 36px; 
-    font-weight: bold; 
-    color: #333; 
-    text-align: center; 
-    margin: 20px 0; 
-    text-transform: uppercase; 
-    letter-spacing: 2px; 
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .title{
-
     background-color: #e8884d; /* 背景色 */
     color: #fff; /* テキストの色 */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* テキストの影 */
@@ -114,6 +113,7 @@ body{
 	padding-bottom: 50px;
 	font-size: 26px;
 	text-align: center;
+    margin-top: 50px;
 }
 
 .leadItem span {
@@ -124,7 +124,7 @@ body{
 .leadItem::before {
 	content: attr(data-en);
 	position: absolute;
-	top: -20px;
+	top: -10px;
 	left: 50%;
 	transform: translateX(-50%);
 	color: rgba(224,66,114,0.2);
@@ -142,76 +142,137 @@ body{
 	height: 40px;
 	background-color: rgba(224,66,114,1);
 }
-
-
-.mainVisual-inner {
-    max-width: 980px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.mainVisual-head {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: flex-start;
-}
-
 /**
 メインページ 
 **/
 .mainVisual{
     height: 550px;
     margin-top: -20px;
-    position: relative;
+    /* position: relative; */
     background: url(../img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
 }
 
-.mainVisual-lead {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-weight: bold;
-    color: #fff;
+.mainVisual-inner {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
 }
-
+.mainVisual-head {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 300px;
+    gap: 12px;
+    align-items: center;
+    margin-left: 220px;
+}
 
 .mainVisual-title{
-    background-color: #ffffff00;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #ff0000;
     font-weight: bold;
     line-height: 1.8;
     letter-spacing: 0.05em;
-    font-size: 55px;
-    padding-left: 20px;
-    padding-right: 4px;
+    font-size: 50px;
+    padding: 0 10px;
 }
-
-.wrapper{
-    
-}
-
-.about-text{
-    font-size: 14px;
+.mainVisual-title2{
+    background-color: #ffffff;
+    color: #fff201;
+    font-weight: bold;
     line-height: 1.8;
     letter-spacing: 0.05em;
+    font-size: 50px;
+    padding: 0 10px;
+    margin-left: 220px;
+}
+.text-column
+.about-text{
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
     text-align: center;
 }
 
+.about-gn{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-evenly; */
+}
+.advice-list{
+
+}
+.advice-item{
+
+}
+.leader::before{
+    
+}
+.leader{
+    color: black;
+}
+.follower{
+    color: black;
+}
+
+/* styles.css もっちーここから*/
+
+@keyframes left-animation {
+    0% { transform: translateX(-100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes right-animation {
+    0% { transform: translateX(100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.animated-text {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.left-text {
+    animation-name: left-animation;
+    animation-delay: 0.5s; /* 適宜遅延を調整 */
+}
+
+.right-text {
+    animation-name: right-animation;
+    animation-delay: 0.5s; /* 適宜遅延を調整 */
+}
+
+
+
 .square{
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
     background-color: chocolate;
     color: #fff;
     text-align: center;
-    line-height: 32px;
+    line-height: 48px;
     position: fixed;
     right: 20px;
     bottom: 20px;
     user-select: none;
     cursor: pointer;
+    border-radius: 100%;
 }
 
 .linkButton{
@@ -277,10 +338,6 @@ body{
     border-radius: 10px ;
 }
 
-.lecture-item:nth-of-type(odd) .lecture-itemImage{
-    /* margin-right: -40px; */
-}
-
 .lecture-item:nth-of-type(even) .lecture-itemImage{
     margin-left: -40px;
 }
@@ -306,8 +363,8 @@ body{
     line-height: 1.5;
     letter-spacing: 0.05em;
     margin-left: 20px;
-    }
-    
+}
+
 .lectureOutline{
     margin-top: 40px;
 }
@@ -325,7 +382,6 @@ body{
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 1000px;
-    
     padding: 20px;
     margin: 10px auto;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -341,8 +397,10 @@ body{
 /* メモボディ */
 .memo-body {
     display: flex;
-    gap: 100px;
     margin-top: 10px;
+    gap: 30px;
+    flex-direction: column;
+    padding: 0 75px 0;
 }
 
 /* メモ入力フィールド */
@@ -467,7 +525,6 @@ body{
     padding: 10px;
     position: relative;
     font-size: 30px;
-    
 }
 .winner-talk-left:after {
     content: '';
@@ -523,20 +580,18 @@ body{
 .privacyInfo-exp{
     display: flex;
     align-items: center;
-    font-size: 22px;
-}
+  
 
 
 
 
 
-/* これが無いとモーダルウィンドウ表示の際に余白が出る */
     *{
         margin: 0;
         padding: 0;
     }
     
-    /* モーダル全体(背景＋本体) */
+   
     .modal{
         display: none;
         position: fixed;
@@ -545,7 +600,7 @@ body{
         width: 100%;
     }
     
-    /* モーダル背景 */
+    
     .modal-bg{
         position: absolute;
         height: 100%;
@@ -557,7 +612,7 @@ body{
         z-index: 5;
     }
     
-    /* モーダル本体 */
+    
     .modal-content{
         position: absolute;
         top: 50%;
@@ -571,7 +626,7 @@ body{
         z-index: 10;
     }
     
-    /* モーダルウィンドウ表示中に記事本体を固定 */
+    
     body.fixed {
         position: fixed;
         width: 100%;
@@ -585,3 +640,4 @@ body{
     color: #0077b6;
 
 }
+
