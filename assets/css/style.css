@@ -1,3 +1,6 @@
+main{
+    margin-top: 100px;
+}
 
 /* ヘッダー */
 .header{ 
@@ -73,29 +76,47 @@
 }
 
 .title{
-    text-align: center;
-    font-size: 25px;
-    letter-spacing: .05em;
-    display: block;
-    font-weight: bold;
-    width: fit-content;
-    position: relative;
-    margin: 0 auto;
+    font-size: 36px; /* フォントサイズ */
+    font-weight: bold; /* 太字 */
+    color: #333; /* テキストの色 */
+    text-align: center; /* 中央寄せ */
+    margin: 20px 0; /* 上下のマージン */
+    text-transform: uppercase; /* テキストを大文字に変換 */
+    letter-spacing: 2px; /* 文字間隔を調整 */
 }
 
-.title::after{
-    content: "";
-    display: block;
-    height: 3px;
-    width: 100%;
-    background-image: linear-gradient(to right, #fff 0%, rgb(242, 94, 2) 50%, #fff 100%);
-    position: absolute;
+.title{
+    background-color: #0077b6; /* 背景色 */
+    color: #fff; /* テキストの色 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* テキストの影 */
+    padding: 10px 20px; /* 内側の余白 */
+    border-radius: 10px; /* 角丸 */
 }
+
+.leadItem{
+    font-size: 24px; /* フォントサイズ */
+    font-weight: bold; /* 太字 */
+    color: #333; /* テキストの色 */
+    text-align: center; /* 中央寄せ */
+    margin: 20px 0; /* 上下のマージン */
+}
+
+.leadItem::after {
+    content: ''; /* 疑似要素の内容 */
+    display: block; /* ブロック要素として表示 */
+    width: 50px; /* 下線の幅 */
+    height: 2px; /* 下線の高さ */
+    background-color: #0077b6; /* 下線の色 */
+    margin: 10px auto; /* 下線の中央寄せと上下のマージン */
+}
+
+
 
 /* メインページ */
 
 
 /* リマインド */
+
 
 .recture-list{
     padding-top: 40px;
@@ -112,16 +133,16 @@
     margin-top: 40px;
 }
 
-.daily-item:nth-of-type(odd){
+.recture-item:nth-of-type(odd){
     flex-direction: row-reverse;
     margin-right: 40px;
 }
 
-.daily-item:nth-of-type(even){
+.recture-item:nth-of-type(even){
     margin-left: 40px;
 }
 
-.daily-itemImage{
+.recture-itemImage{
     border-radius: 10px;
     overflow: hidden;
     width: 480px;
@@ -130,24 +151,24 @@
     margin-top: -40px;
 }
 
-.daily-itemImage img{
+.recture-itemImage img{
     object-fit: cover;
 }
 
-.daily-item:nth-of-type(odd) .daily-itemImage{
+.recture-item:nth-of-type(odd) .daily-itemImage{
     margin-right: -40px;
 }
 
-.daily-item:nth-of-type(even) .daily-itemImage{
+.recture-item:nth-of-type(even) .daily-itemImage{
     margin-left: -40px;
 }
 
-.daily-itemBody{
+.recture-itemBody{
     padding: 48px 56px;
     width: 100%;
 }
 
-.daily-titleNumber{
+.recture-titleNumber{
     font-weight: bold;
     font-size: 58px;
     color: var(--primary-color);
@@ -156,7 +177,7 @@
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-.daily-titleText{
+.recture-titleText{
     font-weight: bold;
     font-size: 24px;
     line-height: 1.5;
@@ -164,30 +185,11 @@
     margin-left: 20px;
 }
 
-.daily-outline{
-    margin-top: 40px;
+.rectureOutline{
+    /* margin-top: 40px; */
 }
 
-.daily-outlineItem::before{
-    content: "";
-    display: block;
-    width: 24px;
-    height: 24px;
-    background: url(../img/icon-check.svg);
-    flex-shrink: 0;
-}
-
-.daily-outlineItem{
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.5;
-    letter-spacing: 0.1em;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.daily-description{
+.recture-description{
     font-weight: 14px;
     line-height: 1.8;
     letter-spacing: 0.05em;
