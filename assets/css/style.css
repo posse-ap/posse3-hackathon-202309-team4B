@@ -66,6 +66,8 @@
 .section-body{
     margin-top: 40px;
     display: flex;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
     position: relative;
 }
@@ -95,6 +97,104 @@
 
 /* リマインド */
 
+.recture-list{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.recture-item{
+    display: flex;
+    background-color: var(--primary-light-color);
+    border-radius: 10px;
+    min-height: 324px;
+    margin-top: 40px;
+}
+
+.daily-item:nth-of-type(odd){
+    flex-direction: row-reverse;
+    margin-right: 40px;
+}
+
+.daily-item:nth-of-type(even){
+    margin-left: 40px;
+}
+
+.daily-itemImage{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 480px;
+    height: 320px;
+    flex-shrink: 0;
+    margin-top: -40px;
+}
+
+.daily-itemImage img{
+    object-fit: cover;
+}
+
+.daily-item:nth-of-type(odd) .daily-itemImage{
+    margin-right: -40px;
+}
+
+.daily-item:nth-of-type(even) .daily-itemImage{
+    margin-left: -40px;
+}
+
+.daily-itemBody{
+    padding: 48px 56px;
+    width: 100%;
+}
+
+.daily-titleNumber{
+    font-weight: bold;
+    font-size: 58px;
+    color: var(--primary-color);
+    line-height: 1;
+    letter-spacing: 0.05em;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.daily-titleText{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    margin-left: 20px;
+}
+
+.daily-outline{
+    margin-top: 40px;
+}
+
+.daily-outlineItem::before{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/icon-check.svg);
+    flex-shrink: 0;
+}
+
+.daily-outlineItem{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.daily-description{
+    font-weight: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    margin-top: 12px;
+}
+
+
 /* ハッカソンレポ */
 
 
@@ -105,17 +205,17 @@
     margin: 30px 0;
     table-layout: fixed;
     width: 100%;
-  }
-  .winner-img {
+}
+.winner-img {
     display: table-cell;
     vertical-align: top;
     width: 100px;
-  }
-  .winner-img img {
+}
+.winner-img img {
     border-radius: 50%;
     width: 100px;
-  }
-  .winner-talk{
+}
+.winner-talk{
     background-color: rgb(50, 99, 156);
     border-bottom: 1px solid #ddd;
     border-radius: 8px;
@@ -123,8 +223,8 @@
     padding: 10px;
     position: relative;
     font-size: 30px;
-  }
-  .winner-talk-left:after {
+}
+.winner-talk-left:after {
     content: '';
     position: absolute;
     border-right: 12px solid #fff;
@@ -132,8 +232,8 @@
     border-bottom: 12px solid transparent;
     left: -12px;
     top: 40px;
-  }
-  .winner-talk-right:after {
+}
+.winner-talk-right:after {
     content: '';
     position: absolute;
     border-left: 12px solid #fff;
@@ -141,8 +241,8 @@
     border-bottom: 12px solid transparent;
     right: -12px;
     top: 40px;
-  }
-  .winner-talk p {
+}
+.winner-talk p {
     line-height: 1.4;
     margin: 0;
-  }
+}
