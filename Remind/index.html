@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header class="header" id="js-header">
+    <header class="header is-open" id="js-header">
         <a href="../index.html" class="header-logo">
             <img src="../assets/img/logo.svg" alt="POSSE" />
         </a>
@@ -66,59 +66,61 @@
                 <h2 class="leadItem" data-en="Recture">講演会</h2>
             </div>
             <div class="section-body">
-                <ul class="recture-list">
-                    <li class="recture-item">
-                        <figure class="recture-itemImage">
-                            <img src="../assets/img/jobInterview.jpg" alt="">
-                        </figure>
-                        <div class="recture-itemBody">
-                            <h3 class="recture-title">
-                                <span class="recture-titleNumber">1.</span>
-                                <span class="recture-titleText">POSSE講演会➀</span>
-                            </h3>
-                            <div class="rectureOutline">
-                                    エンジニアという職業
-                            </div>
-                            <div class="recture-description">
-                                実際にプログラミングを使って生活をしている方からお話を聞ける機会を設けることができました!プログラミングの将来性を知ることができるいい時間となるはずです!
-                            </div>
-                        </div>
-                    </li>
-                    <li class="recture-item">
-                        <figure class="recture-itemImage">
-                            <img src="../assets/img/interviewToSenpai.jpg" alt="">
-                        </figure>
-                        <div class="recture-itemBody">
-                            <h3 class="recture-title">
-                                <span class="recture-titleNumber">2.</span>
-                                <span class="recture-titleText">先輩講演会</span>
-                            </h3>
-                            <div class="rectureOutline">
-                                先輩方のPOSSEに対する思い＆悩み相談会
-                            </div>
-                            <div class="recture-description">
-                                <p>先輩方がPOSSEに対して今実際に思っていること、感じていることを話してくれる会です。もしかしたら過去に同じ悩みを持っていた先輩方が見つかるかも...</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="recture-item">
-                        <figure class="recture-itemImage">
-                            <img src="../assets/img/recture.jpg" alt="">
-                        </figure>
-                        <div class="recture-itemBody">
-                            <h3 class="recture-title">
-                                <span class="recture-titleNumber">3.</span>
-                                <span class="recture-titleText">POSSE講演会➁</span>
-                            </h3>
-                            <div class="rectureOutline">
-                                アンチパターン社社員様による講演会
-                            </div>
-                            <div class="recture-description">
-                                <p>アンチパターンが考えている将来の展望、方針をありありと話してくださる機会となっています。大人の話を聞くことはあまりないのでお忘れなく!</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+                <div class="splide recture-slide" id="js-rectureSlide">
+                    <div class="splide__track">
+                        <ul class="splide__list recture-list">
+                            <li class="splide__slide recture-item">
+                                <figure class="recture-itemImage">
+                                    <img src="../assets/img/jobInterview.jpg" alt="">
+                                </figure>
+                                <div class="recture-itemBody">
+                                    <h3 class="recture-title">
+                                        <span class="recture-titleNumber">1.</span>
+                                        <span class="recture-titleText">POSSE講演会➀</span>
+                                    </h3>
+                                    <div class="rectureOutline">
+                                            エンジニアという職業
+                                    </div>
+                                    <div class="recture-description">
+                                        実際にプログラミングを使って生活をしている方からお話を聞ける機会を設けることができました!プログラミングの将来性を知ることができるいい時間となるはずです!
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide recture-item">
+                                <figure class="recture-itemImage">
+                                    <img src="../assets/img/interviewToSenpai.jpg" alt="">
+                                </figure>
+                                <div class="recture-itemBody">
+                                    <h3 class="recture-title">
+                                        <span class="recture-titleNumber">2.</span>
+                                        <span class="recture-titleText">先輩講演会</span>
+                                    </h3>
+                                    <div class="rectureOutline">
+                                        先輩方のPOSSEに対する思い＆悩み相談会
+                                    </div>
+                                    <div class="recture-description">
+                                        <p>先輩方がPOSSEに対して今実際に思っていること、感じていることを話してくれる会です。もしかしたら過去に同じ悩みを持っていた先輩方が見つかるかも...</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide recture-item">
+                                <figure class="recture-itemImage">
+                                    <img src="../assets/img/recture.jpg" alt="">
+                                </figure>
+                                <div class="recture-itemBody">
+                                    <h3 class="recture-title">
+                                        <span class="recture-titleNumber">3.</span>
+                                        <span class="recture-titleText">POSSE講演会➁</span>
+                                    </h3>
+                                    <div class="rectureOutline">
+                                        アンチパターン社社員様による講演会
+                                    </div>
+                                    <div class="recture-description">
+                                        <p>アンチパターンが考えている将来の展望、方針をありありと話してくださる機会となっています。大人の話を聞くことはあまりないのでお忘れなく!</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                 <div class="memoItem">
                     <input type="text" class="new-memo" id="newMemo">
                     <button type="button" class="add-memo">メモ追加</button>
