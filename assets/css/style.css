@@ -45,15 +45,13 @@
 
 /* フッター */
 .footer{
-    padding-top: 40px;
-    text-align: center;
-  }
+    padding-top: 40px 0px 40px;
+}
 .footer-copyright{
     text-align: center;
     margin-top: 24px;
-    border-top: solid 1px var(--gray-light-color);
-    color: var(--gray-color);
-    font-family: var(--english-font);
+    border-top: solid 1px ;
+    color:darkgrey;
     letter-spacing: .1em;
     line-height: 1.5;
     font-size: 10px;
