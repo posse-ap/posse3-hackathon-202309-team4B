@@ -1,3 +1,4 @@
+
 main{
     margin-top: 100px;
     background-color: #faf5e0;
@@ -46,28 +47,27 @@ main{
     display: flex;
 }
 
-
 /* フッター */
-.footer{
+.footer {
     padding-top: 40px 0px 40px;
 }
-.footer-copyright{
+.footer-copyright {
     text-align: center;
     margin-top: 24px;
-    border-top: solid 1px ;
-    color:darkgrey;
-    letter-spacing: .1em;
+    border-top: solid 1px;
+    color: darkgrey;
+    letter-spacing: 0.1em;
     line-height: 1.5;
     font-size: 10px;
     padding: 24px;
 }
 
 /* 共通 */
-.section{
+.section {
     padding-top: 80px;
 }
 
-.section-body{
+.section-body {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
@@ -130,26 +130,56 @@ main{
 }
 
 
-/* メインページ */
-.mainVisual{
-    height: 200px;
-    width: 200px;
-    padding: 40px 24px;
-    /*display: flex;
-    align-items: flex-end;*/
+.mainVisual-inner {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
 }
 
+.mainVisual-head {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+/* メインページ */
+.mainVisual{
+    height: 550px;
+    margin-top: -20px;
+    position: relative;
+    background: url(../img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
+}
+
+.mainVisual-lead {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* .mainVisual-picture{
+    position: relative;
+} */
+
 .mainVisual-title{
-    background-color: #ffffff;
-    color: #0071bc;
+    background-color: #ffffff00;
+    color: #ffffff;
     font-weight: bold;
     line-height: 1.8;
     letter-spacing: 0.05em;
-    font-size: 24px;
+    font-size: 55px;
     padding-left: 20px;
     padding-right: 4px;
+
 }
 
+.linkButton:hover{
+    background-color: #0056b3;
+}
 
 /* リマインド */
 .recture-list{
@@ -165,35 +195,31 @@ main{
     border-radius: 10px;
     min-height: 324px;
     margin: 0 200px;
+    padding: 40px 20px 20px 0;
 }
 
 .recture-item:nth-of-type(odd){
     flex-direction: row-reverse;
 }
 
-
-.recture-itemImage{
+.recture-itemImage {
     border-radius: 10px;
     overflow: hidden;
     width: 480px;
     height: 320px;
     flex-shrink: 0;
-    margin-top: -40px;
-}
-
-.recture-itemImage img{
-    object-fit: cover;
+    /* margin-top: -40px; */
 }
 
 .recture-item:nth-of-type(odd) .recture-itemImage{
-    margin-right: -40px;
+    /* margin-right: -40px; */
 }
 
 .recture-item:nth-of-type(even) .recture-itemImage{
     margin-left: -40px;
 }
 
-.recture-itemBody{
+.recture-itemBody {
     padding: 48px 56px;
     width: 100%;
 }
@@ -207,31 +233,33 @@ main{
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-.recture-titleText{
+
+.recture-titleText {
     font-weight: bold;
     font-size: 24px;
     line-height: 1.5;
     letter-spacing: 0.05em;
     margin-left: 20px;
-}
-
+    }
+    
 .rectureOutline{
     margin-top: 40px;
 }
 
-.recture-description{
+.recture-description {
     font-weight: 14px;
     line-height: 1.8;
     letter-spacing: 0.05em;
     margin-top: 12px;
 }
 
-
 /* ハッカソンレポ */
-.hackathon-sectionbody{
-    margin: 50px;
-}
 
+.question{
+    padding-left: 150px;
+    padding-top: 20px;
+    font-size: 30px;
+}
 
 .winnerInterview-img{
     max-width: 100%;
@@ -240,7 +268,15 @@ main{
 .explain{
     font-size: 20px;
     margin-top: 30px;
+}
 
+.winnerQuestion {
+    justify-content: center;
+}
+
+.winnerName{
+    text-align: center;
+    font-weight: bold;
 }
 
 .winnerComment-box {
@@ -260,15 +296,21 @@ main{
     border-radius: 50%;
     width: 100px;
 }
+
+
+.comment{
+    font-size: 20px;
+}
+
 .winner-talk{
     background-color: rgb(159, 192, 231);
-
     border-bottom: 1px solid #ddd;
     border-radius: 8px;
-    display: table-cell;
+    display: inline-block;
     padding: 10px;
     position: relative;
     font-size: 30px;
+    
 }
 .winner-talk-left:after {
     content: '';
@@ -277,6 +319,12 @@ main{
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
     left: -12px;
-    top: 40px;
+    top: 12px;
 
 }
+
+.answerbox{
+    margin-left: 25%;
+}
+
+

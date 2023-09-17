@@ -16,6 +16,8 @@ console.log(header);
 
 //ハッカソンレポ
 
+
+
 //リマインド
 const addMemoButton = document.querySelector('.add-memo');
 addMemoButton.addEventListener('click',function(){
@@ -42,3 +44,5 @@ const rectureSlideOptions = {
 }
 
 new Splide('#js-rectureSlide', dailySlideOptions).mount();
+
+
