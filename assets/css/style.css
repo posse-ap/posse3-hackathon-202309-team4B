@@ -161,9 +161,6 @@ main{
     color: #fff;
 }
 
-/* .mainVisual-picture{
-    position: relative;
-} */
 
 .mainVisual-title{
     background-color: #ffffff00;
@@ -182,6 +179,8 @@ main{
 }
 
 /* リマインド */
+
+
 .lecture-list{
     padding-top: 40px;
     display: flex;
@@ -252,6 +251,8 @@ main{
     letter-spacing: 0.05em;
     margin-top: 12px;
 }
+
+
 
 /* ハッカソンレポ */
 
