@@ -415,6 +415,7 @@ body{
 
 /* メモタイトル */
 .memo-title {
+    text-align: center;
     font-size: 24px;
     margin: 0;
     color: #333;
@@ -428,7 +429,11 @@ body{
     flex-direction: column;
     padding: 0 100px 0;
 }
-
+.memo-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* メモ入力フィールド */
 .new-memo {
     width: 100%;
@@ -436,7 +441,10 @@ body{
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 33px;
+}
+.memo-text{
+    text-align: center;
 }
 
 /* メモ追加ボタン */

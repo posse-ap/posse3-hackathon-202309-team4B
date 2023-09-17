@@ -343,17 +343,30 @@
   .lectureOutline{
     padding-top: 20px;
   }
-
+.memo-title{
+  text-align: center;
+  margin-bottom: 20px;
+}
   .memoItem{
     width: 90%;
     margin-top: 30px;
   }
-
+.memo-input{
+  display: flex;
+  flex-direction: column;
+}
+.add-memo{
+  text-align: center;
+  margin: 15px
+}
   .memo-body {
-    gap: 30px;
+    gap: 12px;
     flex-direction: column;
     padding: 0 75px 0;
   }
+.memo-text{
+  text-align: center;
+}
 
   .inform-item{
     width: 300px;
