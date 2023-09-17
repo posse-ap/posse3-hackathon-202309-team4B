@@ -184,14 +184,20 @@
   margin-left: 40px;
 }
 
+.about-text{
+  padding: 10px;
+  font-size: 15px;
+}
+
 .about-gn{
-  height: 60vh;
+  height: 500px;
+  padding-top: 30px;
   margin: 0;
 }
 
 .advice-list{
   padding: 0;
-  height: 600px;
+  height: 500px;
 }
 
 .advice-item{
@@ -199,6 +205,18 @@
   background-color: #fcf9de;
   padding: 10px;
   width: 300px;
+}
+
+.leader{
+  font-size: 18px;
+}
+
+.follower{
+  font-size: 18px;
+}
+
+.gn-text{
+  font-size: 14px;
 }
 
 .button-list{
