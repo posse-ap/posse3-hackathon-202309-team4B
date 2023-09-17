@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POSSE③サイト</title>
+    <link rel="stylesheet" href="../assets/css/splide.min.css">
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/sp/style.css">
+    <script src="../assets/js/splide.min.js" defer></script>
     <script src="../assets/js/script.js" defer></script>
 </head>
 
 <body>
     <header class="header is-open" id="js-header">
         <a href="../index.html" class="header-logo">
-            <img src="../assets/img/logo.svg" alt="POSSE" />
+            <img src="../assets/img/logo.svg" alt="POSSE" class="header-logoImg">
         </a>
         <button class="header-button" id="js-headerButton">
             <span class="header-buttonLine"></span>
@@ -62,64 +64,66 @@
         </div>
         <section class="section">
             <div class="section-head">
-                <h2 class="leadItem" data-en="Recture">講演会</h2>
+                <h2 class="leadItem" data-en="Lecture">講演会</h2>
             </div>
             <div class="section-body">
-
-                <ul class="recture-list">
-                    <li class="recture-item">
-                        <figure class="recture-itemImage">
-                            <img src="../assets/img/jobInterview.jpg" alt="">
-                        </figure>
-                        <div class="recture-itemBody">
-                            <h3 class="recture-title">
-                                <span class="recture-titleNumber">1.</span>
-                                <span class="recture-titleText">POSSE講演会➀</span>
-                            </h3>
-                            <div class="rectureOutline">
-                                    エンジニアという職業
-                            </div>
-                            <div class="recture-description">
-                                実際にプログラミングを使って生活をしている方から<br>お話を聞ける機会を設けることができました!<br>プログラミングの将来性を知れるいい時間となるはずです!
-                            </div>
-                        </div>
-                    </li>
-                    <li class="recture-item">
-                        <figure class="recture-itemImage">
-                            <img src="../assets/img/interview2.jpg" alt="">
-                        </figure>
-                        <div class="recture-itemBody">
-                            <h3 class="recture-title">
-                                <span class="recture-titleNumber">2.</span>
-                                <span class="recture-titleText">先輩講演会</span>
-                            </h3>
-                            <div class="rectureOutline">
-                                先輩方のPOSSEに対する思い&悩み相談会
-                            </div>
-                            <div class="recture-description">
-                                <p>先輩方がPOSSEに対して今実際に思っていること、感じていることを話してくれる会です。もしかしたら過去に同じ悩みを持っていた先輩方が見つかるかも...</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="recture-item">
-                        <figure class="recture-itemImage">
-                            <img src="../assets/img/recture2.jpg" alt="" >
-                        </figure>
-                        <div class="recture-itemBody">
-                            <h3 class="recture-title">
-                                <span class="recture-titleNumber">3.</span>
-                                <span class="recture-titleText">POSSE講演会➁</span>
-                            </h3>
-                            <div class="rectureOutline">
-                                アンチパターン社社員様による講演会
-                            </div>
-                            <div class="recture-description">
-                                <p>アンチパターンが考えている将来の展望、方針をありありと話してくださる機会となっています。大人の話を聞くことはあまりないのでお忘れなく!</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-
+                <div class="splide lecture-slide" id="js-lectureSlide">
+                    <div class="splide__track">
+                        <ul class="splide__list lecture-list">
+                            <li class="splide__slide lecture-item">
+                                <figure class="lecture-itemImage">
+                                    <img src="../assets/img/jobInterview.jpg" alt="" class="lecImg1">
+                                </figure>
+                                <div class="lecture-itemBody">
+                                    <h3 class="recture-title">
+                                        <span class="lecture-titleNumber">1.</span>
+                                        <span class="lecture-titleText">POSSE講演会➀</span>
+                                    </h3>
+                                    <div class="lectureOutline">
+                                            エンジニアという職業
+                                    </div>
+                                    <div class="lecture-description">
+                                        実際にプログラミングを使って生活をしている方から<br>お話を聞ける機会を設けることができました!<br>プログラミングの将来性を知れるいい時間となるはずです!
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide lecture-item">
+                                <figure class="lecture-itemImage" >
+                                    <img src="../assets/img/interview2.jpg" alt="" class="lecImg2">
+                                </figure>
+                                <div class="lecture-itemBody">
+                                    <h3 class="lecture-title">
+                                        <span class="lecture-titleNumber">2.</span>
+                                        <span class="lecture-titleText">先輩講演会</span>
+                                    </h3>
+                                    <div class="lectureOutline">
+                                        先輩方のPOSSEに対する思い&悩み相談会
+                                    </div>
+                                    <div class="lecture-description">
+                                        <p>先輩方がPOSSEに対して今実際に思っていること、感じていることを話してくれる会です。もしかしたら過去に同じ悩みを持っていた先輩方が見つかるかも...</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide lecture-item">
+                                <figure class="recture-itemImage">
+                                    <img src="../assets/img/recture2.jpg" alt="" class="lecImg3">
+                                </figure>
+                                <div class="lecture-itemBody">
+                                    <h3 class="lecture-title">
+                                        <span class="lecture-titleNumber">3.</span>
+                                        <span class="lecture-titleText">POSSE講演会➁</span>
+                                    </h3>
+                                    <div class="lectureOutline">
+                                        アンチパターン社社員様による講演会
+                                    </div>
+                                    <div class="lecture-description">
+                                        <p>アンチパターンが考えている将来の展望、方針をありありと話してくださる機会となっています。大人の話を聞くことはあまりないのでお忘れなく!</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="memoItem">
                     <input type="text" class="new-memo" id="newMemo">
                     <button type="button" class="add-memo">メモ追加</button>
@@ -131,15 +135,11 @@
         </section>
     </main>
 
-<<<<<<< Updated upstream
-    <footer class="footer">
+    <footer>
         <div class="footer-copyright">
             <small lang="en">&copy; 2023 POSSE all rights reserved</small>
         </div>
     </footer>
-    
-=======
->>>>>>> Stashed changes
-</body>
 
+</body>
 </html>

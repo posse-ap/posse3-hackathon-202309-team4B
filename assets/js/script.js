@@ -31,7 +31,7 @@ addMemoButton.addEventListener('click',function(){
     memoList.append(newMemo);
 });
 
-const rectureSlideOptions = {
+const lectureSlideOptions = {
     type: 'loop',
     gap:40,
     padding: {left:28, right:28 },
@@ -43,4 +43,6 @@ const rectureSlideOptions = {
     },
 }
 
-new Splide('#js-rectureSlide', dailySlideOptions).mount();
+new Splide('#js-lectureSlide', lectureSlideOptions).mount();
+
+

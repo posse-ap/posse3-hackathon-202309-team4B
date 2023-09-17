@@ -5,6 +5,7 @@ main{
 }
 
 /* ヘッダー */
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 .header {
   display: flex;
@@ -21,6 +22,9 @@ main{
   transition: background-color 0.3s linear;
 =======
 .header{
+=======
+.header{ 
+>>>>>>> 4bc9f5c27c7e09c0fee3a9743920c6b35138bf6f
     display: flex;
     align-items: center;
     height: 80px;
@@ -29,11 +33,18 @@ main{
     left: 0;
     width: 100%;
     background-color: #fff;
+<<<<<<< HEAD
     border-bottom: solid 1px #ADADAD;/*ヘッダーの下の薄い線*/
     padding: 0 24px;/*余白の設定*/
     z-index: 10000;/*ヘッダーが一番上に表示されるように順序を設定*/
     transition: background-color 0.3s linear;
 >>>>>>> Stashed changes
+=======
+    border-bottom: solid 1px #ADADAD;
+    padding: 0 24px;
+    z-index: 10000;/*ヘッダーが一番上に表示されるように順序を設定*/
+    transition: background-color 0.3s linear;
+>>>>>>> 4bc9f5c27c7e09c0fee3a9743920c6b35138bf6f
 }
 
 .header-logo{
@@ -44,7 +55,7 @@ main{
 .header-nav{
     display: flex;
     align-items: center; 
-    margin-left: auto;/*ナビゲーションバーを右寄せ*/
+    margin-left: auto;
     margin-right: 120px;
 }
 
@@ -65,63 +76,55 @@ main{
 
 /* フッター */
 .footer {
-  padding-top: 40px 0px 40px;
+    padding-top: 40px 0px 40px;
 }
 .footer-copyright {
-  text-align: center;
-  margin-top: 24px;
-  border-top: solid 1px;
-  color: darkgrey;
-  letter-spacing: 0.1em;
-  line-height: 1.5;
-  font-size: 10px;
-  padding: 24px;
+    text-align: center;
+    margin-top: 24px;
+    border-top: solid 1px;
+    color: darkgrey;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    font-size: 10px;
+    padding: 24px;
 }
 
 /* 共通 */
 .section {
+
   /* padding-top: 80px; */
   margin-top: -20px;
+
 }
 
 .section-body {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  position: relative;
-}
-
-.title {
-  font-size: 36px; /* フォントサイズ */
-  font-weight: bold; /* 太字 */
-  color: #333; /* テキストの色 */
-  text-align: center; /* 中央寄せ */
-  margin: 20px 0; /* 上下のマージン */
-  text-transform: uppercase; /* テキストを大文字に変換 */
-  letter-spacing: 2px; /* 文字間隔を調整 */
-}
-
-/* メインページ */
-.mainVisual {
-  background: url(../img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg)
-    center center / cover no-repeat;
-  height: 100vh;
-  padding: 40px 24px;
-  margin-top: -40px;
-  display: flex;
-  align-items: flex-end;
-  background-size: cover;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: relative;
 }
 
 .title{
+    font-size: 36px; 
+    font-weight: bold; 
+    color: #333; 
+    text-align: center; 
+    margin: 20px 0; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+}
+
+.title{
+
     background-color: #e8884d; /* 背景色 */
     color: #fff; /* テキストの色 */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* テキストの影 */
     padding: 10px 20px; /* 内側の余白 */
     border-radius: 10px; /* 角丸 */
     margin-top: -20px;
+
 }
 
 .leadItem {
@@ -159,49 +162,32 @@ main{
 	background-color: rgba(224,66,114,1);
 }
 
-/* .leadItem{
-    display: block;
-    width: fit-content;
-    position: relative;
-    font-size: 24px; 
-    font-weight: bold; 
-    color: #333; 
-    text-align: center; 
-    margin: 0 auto; 
-}
-
-.leadItem::after {
-    content: ''; 
-    display: block; 
-    width: 100%; 
-    height: 3px; 
-    background-color: #0077b6; 
-    margin: 10px auto; 
-    position: absolute;
-} */
 
 .mainVisual-inner {
-  max-width: 980px;
-  width: 100%;
-  margin: 0 auto;
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .mainVisual-head {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
 }
-
 
 /* メインページ */
 .mainVisual{
     height: 650px;
     margin-top: -20px;
     position: relative;
+<<<<<<< HEAD
     background-image: url(../img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
     /*display: flex;
     align-items: flex-end;*/
+=======
+    background: url(../img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
+>>>>>>> 4bc9f5c27c7e09c0fee3a9743920c6b35138bf6f
 }
 
 .mainVisual-lead {
@@ -215,9 +201,6 @@ main{
     
 }
 
-.mainVisual-picture{
-    position: relative;
-}
 
 .mainVisual-title{
     background-color: #ffffff00;
@@ -236,14 +219,16 @@ main{
 }
 
 /* リマインド */
-.recture-list{
+
+
+.lecture-list{
     padding-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.recture-item{
+.lecture-item{
     display: flex;
     background-color: #b4d1be;
     border-radius: 10px;
@@ -252,50 +237,33 @@ main{
     padding: 40px 20px 20px 0;
 }
 
-.recture-item:nth-of-type(odd){
+.lecture-item:nth-of-type(odd){
     flex-direction: row-reverse;
 }
-.daily-item:nth-of-type(even){
-    /* margin-left: 40px; */
-}
 
-.recture-itemImage{
+.lecture-itemImage {
     border-radius: 10px;
     overflow: hidden;
     width: 480px;
     height: 320px;
     flex-shrink: 0;
-    margin-top: 50px;
-
+    /* margin-top: -40px; */
 }
 
-.recture-itemImage {
-  border-radius: 10px;
-  overflow: hidden;
-  width: 480px;
-  height: 320px;
-  flex-shrink: 0;
-  margin-top: -40px;
-}
+/*.lecture-item:nth-of-type(odd) .lecture-itemImage{
+    /* margin-right: -40px; 
+}*/
 
-.recture-item:nth-of-type(odd) .recture-itemImage{
-    /* margin-right: -40px; */
-}
-
-.recture-item:nth-of-type(even) .recture-itemImage{
+.lecture-item:nth-of-type(even) .lecture-itemImage{
     margin-left: -40px;
 }
 
-.recture-item:nth-of-type(even) .daily-itemImage {
-  margin-left: -40px;
+.lecture-itemBody {
+    padding: 48px 56px;
+    width: 100%;
 }
 
-
-.recture-itemBody {
-  padding: 48px 56px;
-  width: 100%;
-
-.recture-titleNumber{
+.lecture-titleNumber{
     font-weight: bold;
     font-size: 58px;
     color: #ab8424;
@@ -305,31 +273,28 @@ main{
 }
 
 
-
-.recture-titleText {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 1.5;
-  letter-spacing: 0.05em;
-  margin-left: 20px;
-  }
-  
-.rectureOutline{
+.lecture-titleText {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    margin-left: 20px;
+    }
+    
+.lectureOutline{
     margin-top: 40px;
 }
 
-.recture-description {
-  font-weight: 14px;
-  line-height: 1.8;
-  letter-spacing: 0.05em;
-  margin-top: 12px;
+.lecture-description {
+    font-weight: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    margin-top: 12px;
 }
 
+
+
 /* ハッカソンレポ */
-
-
-
-
 
 .question{
     padding-left: 150px;
@@ -356,22 +321,23 @@ main{
 }
 
 .winnerComment-box {
-  border-collapse: separate;
-  border-spacing: 15px 2px;
-  display: table;
-  margin: 30px 0;
-  table-layout: fixed;
-  width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px 2px;
+    display: table;
+    margin: 30px 0;
+    table-layout: fixed;
+    width: 100%;
 }
 .winner-img {
-  display: table-cell;
-  vertical-align: top;
-  width: 100px;
+    display: table-cell;
+    vertical-align: top;
+    width: 100px;
 }
 .winner-img img {
     border-radius: 50%;
     width: 100px;
-  }
+}
+
 
 .comment{
     font-size: 20px;
@@ -400,6 +366,6 @@ main{
 
 .answerbox{
     margin-left: 25%;
-  }
+}
 
 

@@ -25,9 +25,14 @@
   }
   
   .header-logo{
-    width: 100px;
+    width: 50px;
     z-index: 1;
+    margin-left: 10px;
   }
+
+.header-logoImg{
+  width: 100px;
+}
   
   .header-nav{
     visibility: hidden;
@@ -152,66 +157,93 @@
   /**
   * 2.5 - リマインド
   */
-  .splide.is-initialized:not(.is-active) .recture-list{
+  .splide.is-initialized:not(.is-active) .lecture-list{
     display: flex;
   }
   
-  .recture-slide{
+  .lecture-slide{
     margin: 0 -12px;
     overflow: auto;
   }
   
-  .recture-list{
+  .lecture-list{
     flex-direction: row;
     gap: initial;
   }
   
-  .recture-item{
+  .lecture-item{
     flex-direction: column;
     width: 320px;
     flex-shrink: 0;
+    margin: 0;
+    padding: 40px 0;
   }
   
-  .recture-item:nth-of-type(odd){
+  .lecture-item:nth-of-type(odd){
     flex-direction: column;
-    margin-right: 0;
   }
   
-  .recture-item:nth-of-type(even){
-    margin-left: 0;
-  }
-  
-  .recture-itemImage{
+  .lecture-itemImage{
     width: 100%;
     height: 200px;
-    margin-top: 0;
-    border-radius: 10px 10px 0 0;
+  }
+
+  .lecImg1{
+    width: 280px;
+    border-radius: 10px;
+  }
+
+  .lecImg2{
+    width: 280px;
+    height: 100%;
+    border-radius: 10px;
+    
+  }
+
+  .lecImg3{
+    width: 280px;
+    border-radius: 10px ;
   }
   
-  .recture-item:nth-of-type(odd) .recture-itemImage{
+  .lecture-item:nth-of-type(odd) .lecture-itemImage{
     margin-right: 0;
   }
   
-  .recture-item:nth-of-type(even) .recture-itemImage{
+  .lecture-item:nth-of-type(even) .lecture-itemImage{
     margin-left: 0;
   }
   
-  .recture-itemBody{
+  .lecture-itemBody{
     padding: 20px 24px;
   }
   
-  .recture-titleNumber{
+  .lecture-titleNumber{
     font-size: 40px;
   }
   
-  .recture-titleText{
+  .lecture-titleText{
     font-size: 20px;
     margin-left: 12px;
   }
   
-  .rectureOutline{
+  .lectureOutline{
     padding-top: 20px;
   }
+
+  .splide__track{
+    overflow: visible;
+}
+  .splide__arrow {
+    width: 40px;
+    height: 40px;
+    border: solid 2px #e8884d;
+    background-color: #FFFFFF;
+    opacity: 1;
+}
+
+.splide__arrow svg path {
+    fill: #e8884d;
+}
 
   /* 3.0 - Animation, JavaScript Object */
   /* ============================================ */
