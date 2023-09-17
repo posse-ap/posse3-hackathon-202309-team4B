@@ -64,7 +64,10 @@ main{
 
 /* 共通 */
 .section {
-    padding-top: 80px;
+
+  /* padding-top: 80px; */
+  margin-top: -20px;
+
 }
 
 .section-body {
@@ -87,11 +90,14 @@ main{
 }
 
 .title{
-    background-color: #e8884d; 
-    color: #fff; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-    padding: 10px 20px; 
-    border-radius: 10px; 
+
+    background-color: #e8884d; /* 背景色 */
+    color: #fff; /* テキストの色 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* テキストの影 */
+    padding: 10px 20px; /* 内側の余白 */
+    border-radius: 10px; /* 角丸 */
+    margin-top: -20px;
+
 }
 
 .leadItem {
