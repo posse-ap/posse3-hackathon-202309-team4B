@@ -1,3 +1,9 @@
+main{
+    margin-top: 100px;
+    background-color: #faf5e0;
+}
+
+/* ヘッダー */
 .header{ 
     display: flex;
     align-items: center;
@@ -14,45 +20,321 @@
 }
 
 .header-logo{
-    width: flex; /*width: 148px;*/
-    /*gap: 48px;*/
+    width: flex; 
+    margin-left: 80px;
 }
 
 .header-nav{
     display: flex;
     align-items: center; 
     margin-left: auto;/*ナビゲーションバーを右寄せ*/
-    gap: 48px;
+    margin-right: 120px;
 }
 
 .header-navList{
     display: flex;
-    gap: 32px;
+    gap: 80px;
 }
 
 .header-navLink{
-    color: #0071BC;
+    color: #b96109;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.1em;
     transition: color 0.3s linear;
     display: flex;
 }
 
+
 /* フッター */
 .footer{
-    padding-top: 40px;
-    text-align: center;
-  }
+    padding-top: 40px 0px 40px;
+}
 .footer-copyright{
     text-align: center;
     margin-top: 24px;
-    border-top: solid 1px var(--gray-light-color);
-    color: var(--gray-color);
-    font-family: var(--english-font);
+    border-top: solid 1px ;
+    color:darkgrey;
     letter-spacing: .1em;
     line-height: 1.5;
     font-size: 10px;
     padding: 24px;
 }
+
+/* 共通 */
+.section{
+    padding-top: 80px;
+}
+
+.section-body{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+}
+
+.title{
+    font-size: 36px; /* フォントサイズ */
+    font-weight: bold; /* 太字 */
+    color: #333; /* テキストの色 */
+    text-align: center; /* 中央寄せ */
+    margin: 20px 0; /* 上下のマージン */
+    text-transform: uppercase; /* テキストを大文字に変換 */
+    letter-spacing: 2px; /* 文字間隔を調整 */
+}
+
+.title{
+    background-color: #e8884d; /* 背景色 */
+    color: #fff; /* テキストの色 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* テキストの影 */
+    padding: 10px 20px; /* 内側の余白 */
+    border-radius: 10px; /* 角丸 */
+}
+
+.leadItem {
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 26px;
+	text-align: center;
+}
+
+.leadItem span {
+	position: relative;
+	z-index: 2;
+}
+
+.leadItem::before {
+	content: attr(data-en);
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: rgba(224,66,114,0.2);
+	font-size: 80px;
+	font-style: italic;
+}
+
+.leadItem::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%) rotate(30deg);
+	width: 1px;
+	height: 40px;
+	background-color: rgba(224,66,114,1);
+}
+
+/* .leadItem{
+    display: block;
+    width: fit-content;
+    position: relative;
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #333; 
+    text-align: center; 
+    margin: 0 auto; 
+}
+
+.leadItem::after {
+    content: ''; 
+    display: block; 
+    width: 100%; 
+    height: 3px; 
+    background-color: #0077b6; 
+    margin: 10px auto; 
+    position: absolute;
+} */
+
+
+
+/* メインページ */
+.mainVisual{
+    height: 400px;
+    position: relative;
+    background: url(../img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg);
+    /*display: flex;
+    align-items: flex-end;*/
+}
+
+.mainVisual-lead {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.mainVisual-picture{
+    position: relative;
+}
+
+.mainVisual-title{
+    background-color: #ffffff;
+    color: #0071bc;
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    font-size: 24px;
+    padding-left: 20px;
+    padding-right: 4px;
+    position: absolute;
+}
+/* リマインド */
+
+
+.recture-list{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.recture-item{
+    display: flex;
+    background-color: #b4d1be;
+    border-radius: 10px;
+    min-height: 324px;
+    margin: 0 200px;
+    padding: 40px 20px 20px 0;
+}
+
+.recture-item:nth-of-type(odd){
+    flex-direction: row-reverse;
+}
+.daily-item:nth-of-type(even){
+    /* margin-left: 40px; */
+}
+.recture-itemImage{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 480px;
+    height: 320px;
+    flex-shrink: 0;
+    margin-top: 50px;
+}
+
+.recture-itemImage img{
+    object-fit: cover;
+}
+
+.recture-item:nth-of-type(odd) .recture-itemImage{
+    /* margin-right: -40px; */
+}
+
+.recture-item:nth-of-type(even) .recture-itemImage{
+    margin-left: -40px;
+}
+
+.recture-itemBody{
+    padding: 48px 56px;
+    width: 100%;
+}
+
+.recture-titleNumber{
+    font-weight: bold;
+    font-size: 58px;
+    color: #ab8424;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.recture-titleText{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    margin-left: 20px;
+}
+
+.rectureOutline{
+    margin-top: 40px;
+}
+
+.recture-description{
+    font-weight: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    margin-top: 12px;
+}
+
+
+/* ハッカソンレポ */
+.hackathon-sectionbody{
+    margin: 50px;
+}
+
+
+.winnerInterview-img{
+  max-width: 100%;
+}
+
+.explain{
+  font-size: 20px;
+  margin-top: 30px;
+
+}
+
+.winnerComment-box {
+    border-collapse: separate;
+    border-spacing: 15px 2px;
+    display: table;
+    margin: 30px 0;
+    table-layout: fixed;
+    width: 100%;
+}
+.winner-img {
+    display: table-cell;
+    vertical-align: top;
+    width: 100px;
+}
+.winner-img img {
+    border-radius: 50%;
+    width: 100px;
+
+  }
+  .winner-talk{
+    background-color: rgb(159, 192, 231);
+
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px;
+    display: table-cell;
+    padding: 10px;
+    position: relative;
+    font-size: 30px;
+}
+.winner-talk-left:after {
+    content: '';
+    position: absolute;
+    border-right: 12px solid rgb(159, 192, 231);
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    left: -12px;
+    top: 40px;
+
+  }
+  /* .winner-talk-right:after {
+=======
+
+    content: '';
+    position: absolute;
+    border-left: 12px solid #fff;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    right: -12px;
+    top: 40px;
+
+  } */
+
+  /* .winner-talk p {
+    line-height: 1.4;
+    margin: 0;
+  } */
+
