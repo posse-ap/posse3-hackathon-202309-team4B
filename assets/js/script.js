@@ -15,3 +15,15 @@ addMemoButton.addEventListener('click',function(){
     const memoList = document.querySelector('.memo-list');
     memoList.append(newMemo);
 });
+
+const dailySlideOptions = {
+    type: 'loop',
+    gap:40,
+    padding: {left:28, right:28 },
+    destroy:true,
+    breakpoints: {
+        768:{
+            destroy: false,
+        },
+    },
+}
