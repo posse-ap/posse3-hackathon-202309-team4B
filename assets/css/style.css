@@ -13,8 +13,8 @@ main{
     left: 0;
     width: 100%;
     background-color: #fff;
-    border-bottom: solid 1px #ADADAD;/*ヘッダーの下の薄い線*/
-    padding: 0 24px;/*余白の設定*/
+    border-bottom: solid 1px #ADADAD;
+    padding: 0 24px;
     z-index: 10000;/*ヘッダーが一番上に表示されるように順序を設定*/
     transition: background-color 0.3s linear;
 }
@@ -27,7 +27,7 @@ main{
 .header-nav{
     display: flex;
     align-items: center; 
-    margin-left: auto;/*ナビゲーションバーを右寄せ*/
+    margin-left: auto;
     margin-right: 120px;
 }
 
@@ -77,21 +77,21 @@ main{
 }
 
 .title{
-    font-size: 36px; /* フォントサイズ */
-    font-weight: bold; /* 太字 */
-    color: #333; /* テキストの色 */
-    text-align: center; /* 中央寄せ */
-    margin: 20px 0; /* 上下のマージン */
-    text-transform: uppercase; /* テキストを大文字に変換 */
-    letter-spacing: 2px; /* 文字間隔を調整 */
+    font-size: 36px; 
+    font-weight: bold; 
+    color: #333; 
+    text-align: center; 
+    margin: 20px 0; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
 }
 
 .title{
-    background-color: #e8884d; /* 背景色 */
-    color: #fff; /* テキストの色 */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* テキストの影 */
-    padding: 10px 20px; /* 内側の余白 */
-    border-radius: 10px; /* 角丸 */
+    background-color: #e8884d; 
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    padding: 10px 20px; 
+    border-radius: 10px; 
 }
 
 .leadItem {
@@ -129,28 +129,6 @@ main{
 	background-color: rgba(224,66,114,1);
 }
 
-/* .leadItem{
-    display: block;
-    width: fit-content;
-    position: relative;
-    font-size: 24px; 
-    font-weight: bold; 
-    color: #333; 
-    text-align: center; 
-    margin: 0 auto; 
-}
-
-.leadItem::after {
-    content: ''; 
-    display: block; 
-    width: 100%; 
-    height: 3px; 
-    background-color: #0077b6; 
-    margin: 10px auto; 
-    position: absolute;
-} */
-
-
 
 /* メインページ */
 .mainVisual{
@@ -160,13 +138,6 @@ main{
     /*display: flex;
     align-items: flex-end;*/
 }
-
-/* .mainVisual-head {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: flex-start;
-  } */
 
 .mainVisual-title{
     background-color: #ffffff;
@@ -199,9 +170,7 @@ main{
 .recture-item:nth-of-type(odd){
     flex-direction: row-reverse;
 }
-.daily-item:nth-of-type(even){
-    /* margin-left: 40px; */
-}
+
 
 .recture-itemImage{
     border-radius: 10px;
@@ -265,12 +234,12 @@ main{
 
 
 .winnerInterview-img{
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .explain{
-  font-size: 20px;
-  margin-top: 30px;
+    font-size: 20px;
+    margin-top: 30px;
 
 }
 
@@ -290,9 +259,8 @@ main{
 .winner-img img {
     border-radius: 50%;
     width: 100px;
-
-  }
-  .winner-talk{
+}
+.winner-talk{
     background-color: rgb(159, 192, 231);
 
     border-bottom: 1px solid #ddd;
@@ -311,22 +279,4 @@ main{
     left: -12px;
     top: 40px;
 
-  }
-  /* .winner-talk-right:after {
-=======
-
-    content: '';
-    position: absolute;
-    border-left: 12px solid #fff;
-    border-top: 12px solid transparent;
-    border-bottom: 12px solid transparent;
-    right: -12px;
-    top: 40px;
-
-  } */
-
-  /* .winner-talk p {
-    line-height: 1.4;
-    margin: 0;
-  } */
-
+}
