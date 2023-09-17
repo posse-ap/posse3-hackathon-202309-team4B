@@ -177,7 +177,17 @@ main{
     font-size: 55px;
     padding-left: 20px;
     padding-right: 4px;
+}
 
+.wrapper{
+    
+}
+
+.about-text{
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    text-align: center;
 }
 
 .square{
@@ -197,7 +207,7 @@ main{
 .linkButton{
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #e8884d;
     color: #fff;
     text-decoration: none;
     border: none;
@@ -206,7 +216,7 @@ main{
 }
 
 .linkButton:hover{
-    background-color: #0056b3;
+    background-color: #b96109;
 }
 
 /* リマインド */
