@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/sp/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../assets/js/splide.min.js" defer></script>
     <script src="../assets/js/script.js" defer></script>
 </head>
@@ -58,7 +59,6 @@
         </nav>
     </header>
     <main>
-
         <div class="mainTitle">
             <h1 class="title">Remind</h1>
         </div>
@@ -133,6 +133,25 @@
                 </div>
             </div>
         </section>
+        <div class="square">Top</div>
+        <script>
+            $(function() {
+              $('.square').hide();
+              $(window).scroll(function() {
+                if ($(this).scrollTop() > 200) {
+                  $('.square').fadeIn();
+                } else {
+                  $('.square').fadeOut();
+                }
+              });
+    
+              $('.square').click(function() {
+                $('body,html').animate({
+                  scrollTop: 0
+                }, 400);
+              })
+            });
+          </script>
     </main>
 
     <footer>

@@ -129,18 +129,22 @@
   * 2.3 - メイン
   */
 .mainVisual{
-    height: 315px;
+    /* height: 315px;
     margin-top: -60px;
-    background-image: url(/assets/img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg);
+    background-image: url(/assets/img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
+    */
     display: flex;
     align-items: flex-end;
+    background-image: url(/assets/img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
+    height: 380px;
+    padding: 16px 12px;
 }
 .mainVisual-inner{
     max-width: 980px;
     width: 100%;
-    margin-right: 100px;
+    margin: 0 auto;
     padding-right: 5px;
-}
+  }
 .mainVisual-title{
     font-size: 26px;
     color: rgb(0, 0, 0);

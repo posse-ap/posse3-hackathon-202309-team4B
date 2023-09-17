@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/sp/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/script.js" defer></script>
 
 </head>
@@ -60,12 +61,12 @@
     <main>
       <section class="mainVisual">
         <div class="mainVisual-inner">
-          <div class="mainVisual">
-            <div class="mainVisual-lead">
-              <h1 class="mainVisual-title">主体性と活発化</h1>
-            </div>
+          <div class="mainVisual-head" data-scroll>
+            <h1 class="mainVisual-title">主体性</h1>
+            <p class="mainVisual-lead">活発化</p>
           </div>
         </div>
+      </section>
         <div class="wrapper">
             <section>
                 <div>
@@ -86,12 +87,12 @@
             <ul>
               <h3>byさきのさん</h3>
               <h3>まどか</h3>
-              <li></li>
+              <li>aaaa</li>
             </ul>
             <ul>
               <h3>byたつさん</h3>
               <h3>あみ</h3>
-              <li></li>
+              <li>iiiii</li>
             </ul>
             <ul>
               <h3>byたいせいさん</h3>
@@ -116,6 +117,24 @@
           </div>
         </section>
       </div>
+      <script>
+        $(function() {
+          $('.square').hide();
+          $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+              $('.square').fadeIn();
+            } else {
+              $('.square').fadeOut();
+            }
+          });
+
+          $('.square').click(function() {
+            $('body,html').animate({
+              scrollTop: 0
+            }, 400);
+          })
+        });
+      </script>
 
     </main>
 

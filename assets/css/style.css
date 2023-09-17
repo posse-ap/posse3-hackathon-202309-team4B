@@ -5,26 +5,7 @@ main{
 }
 
 /* ヘッダー */
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-.header {
-  display: flex;
-  align-items: center;
-  height: 80px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  border-bottom: solid 1px #adadad; /*ヘッダーの下の薄い線*/
-  padding: 0 24px; /*余白の設定*/
-  z-index: 10000; /*ヘッダーが一番上に表示されるように順序を設定*/
-  transition: background-color 0.3s linear;
-=======
 .header{
-=======
-.header{ 
->>>>>>> 4bc9f5c27c7e09c0fee3a9743920c6b35138bf6f
     display: flex;
     align-items: center;
     height: 80px;
@@ -33,28 +14,20 @@ main{
     left: 0;
     width: 100%;
     background-color: #fff;
-<<<<<<< HEAD
-    border-bottom: solid 1px #ADADAD;/*ヘッダーの下の薄い線*/
-    padding: 0 24px;/*余白の設定*/
-    z-index: 10000;/*ヘッダーが一番上に表示されるように順序を設定*/
-    transition: background-color 0.3s linear;
->>>>>>> Stashed changes
-=======
     border-bottom: solid 1px #ADADAD;
     padding: 0 24px;
     z-index: 10000;/*ヘッダーが一番上に表示されるように順序を設定*/
     transition: background-color 0.3s linear;
->>>>>>> 4bc9f5c27c7e09c0fee3a9743920c6b35138bf6f
 }
 
 .header-logo{
-    width: flex; 
+    width: flex;
     margin-left: 80px;
 }
 
 .header-nav{
     display: flex;
-    align-items: center; 
+    align-items: center;
     margin-left: auto;
     margin-right: 120px;
 }
@@ -93,7 +66,7 @@ main{
 .section {
 
   /* padding-top: 80px; */
-  margin-top: -20px;
+    margin-top: -20px;
 
 }
 
@@ -107,13 +80,13 @@ main{
 }
 
 .title{
-    font-size: 36px; 
-    font-weight: bold; 
-    color: #333; 
-    text-align: center; 
-    margin: 20px 0; 
-    text-transform: uppercase; 
-    letter-spacing: 2px; 
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .title{
@@ -162,32 +135,47 @@ main{
 	background-color: rgba(224,66,114,1);
 }
 
+/* メインページ */
 
+.mainVisual{
+    height: 650px;
+    margin-top: -20px;
+    /* position: relative; */
+    background-image: url() center center / cover no-repeat;
+    display: flex;
+    align-items: flex-end;
+}
 .mainVisual-inner {
     max-width: 980px;
     width: 100%;
     margin: 0 auto;
 }
-
 .mainVisual-head {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     gap: 12px;
     align-items: flex-start;
+    /* display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;*/
 }
+.mainVisual-title{
+    background-color: #ffffff00;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    font-size: 24px;
+    padding-left: 20px;
+    padding-right: 4px; 
+    /* background-color: #fff;
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: .05em;
+    font-size: 60px;
+    padding-left: 20px; */
 
-/* メインページ */
-.mainVisual{
-    height: 650px;
-    margin-top: -20px;
-    position: relative;
-<<<<<<< HEAD
-    background-image: url(../img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
-    /*display: flex;
-    align-items: flex-end;*/
-=======
-    background: url(../img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
->>>>>>> 4bc9f5c27c7e09c0fee3a9743920c6b35138bf6f
 }
 
 .mainVisual-lead {
@@ -198,20 +186,34 @@ main{
     text-align: center;
     font-weight: bold;
     color: #fff;
-    
 }
 
 
-.mainVisual-title{
-    background-color: #ffffff00;
-    color: #ffffff;
-    font-weight: bold;
-    line-height: 1.8;
-    letter-spacing: 0.05em;
-    font-size: 55px;
-    padding-left: 20px;
-    padding-right: 4px;
 
+
+.square{
+    width: 32px;
+    height: 32px;
+    background-color: chocolate;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.linkButton{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .linkButton:hover{
@@ -251,7 +253,7 @@ main{
 }
 
 /*.lecture-item:nth-of-type(odd) .lecture-itemImage{
-    /* margin-right: -40px; 
+    /* margin-right: -40px;
 }*/
 
 .lecture-item:nth-of-type(even) .lecture-itemImage{
@@ -280,7 +282,7 @@ main{
     letter-spacing: 0.05em;
     margin-left: 20px;
     }
-    
+
 .lectureOutline{
     margin-top: 40px;
 }
@@ -351,7 +353,6 @@ main{
     padding: 10px;
     position: relative;
     font-size: 30px;
-    
 }
 .winner-talk-left:after {
     content: '';
@@ -367,5 +368,4 @@ main{
 .answerbox{
     margin-left: 25%;
 }
-
 
