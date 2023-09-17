@@ -179,29 +179,42 @@ main{
     padding-right: 4px;
 }
 
-.wrapper{
-    
-}
-
 .about-text{
     font-size: 14px;
     line-height: 1.8;
     letter-spacing: 0.05em;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
     text-align: center;
 }
 
+.about-gn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+
+.leader{
+    color: ;
+}
+
 .square{
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
     background-color: chocolate;
     color: #fff;
     text-align: center;
-    line-height: 32px;
+    line-height: 48px;
     position: fixed;
     right: 20px;
     bottom: 20px;
     user-select: none;
     cursor: pointer;
+    border-radius: 100%;
 }
 
 .linkButton{
@@ -280,8 +293,8 @@ main{
     line-height: 1.5;
     letter-spacing: 0.05em;
     margin-left: 20px;
-    }
-    
+}
+
 .lectureOutline{
     margin-top: 40px;
 }
@@ -352,7 +365,6 @@ main{
     padding: 10px;
     position: relative;
     font-size: 30px;
-    
 }
 .winner-talk-left:after {
     content: '';
@@ -370,4 +382,3 @@ main{
 }
 
 
-}
