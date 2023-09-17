@@ -147,9 +147,11 @@ body{
 .mainVisual{
     height: 550px;
     margin-top: -20px;
-    /* position: relative; */
     background: url(../img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
+    opacity: 0.5;
 }
+
+
 
 .mainVisual-inner {
     max-width: 980px;
@@ -166,15 +168,15 @@ body{
 }
 
 .mainVisual-title{
-    background-color: #ffffff;
-    color: #ff0000;
+    color: red;
+    
     font-weight: bold;
     line-height: 1.8;
     letter-spacing: 0.05em;
-    font-size: 50px;
+    font-size: 60px;
     padding: 0 10px;
 }
-.mainVisual-title2{
+/* .mainVisual-title2{
     background-color: #ffffff;
     color: #fff201;
     font-weight: bold;
@@ -183,7 +185,7 @@ body{
     font-size: 50px;
     padding: 0 10px;
     margin-left: 220px;
-}
+} */
 .text-column
 
 .about-text{

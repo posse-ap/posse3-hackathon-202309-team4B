@@ -153,6 +153,7 @@
     height: 700px;
     padding: 16px 12px;
     margin-top: -60px;
+    opacity: 0.5;
 }
 .mainVisual-inner{
     max-width: 980px;
@@ -171,13 +172,14 @@
 }
 .mainVisual-title{
     font-size: 40px;
-    color: rgb(255, 0, 0);
-    background-color: #ffffff;
+    color: red;
     font-weight: bold;
     line-height: 1.8;
     letter-spacing: .05em;
     margin-right: 70px;
+    
 }
+
 .mainVisual-title2{
   font-size: 40px;
   color: rgb(238, 255, 0);
@@ -232,6 +234,19 @@
 .privacyInfo-exp{
   font-size: 16px;
 }
+
+.modal-content{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-57%, -50%);
+    overflow: scroll;
+    width: 100%;
+    background: white;
+    padding: 40px;
+    
+
+
   /**
   * 2.5 - リマインド
   */
