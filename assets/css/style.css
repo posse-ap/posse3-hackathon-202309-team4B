@@ -167,9 +167,6 @@ main{
     color: #fff;
 }
 
-/* .mainVisual-picture{
-    position: relative;
-} */
 
 .mainVisual-title{
     background-color: #ffffff00;
@@ -188,14 +185,16 @@ main{
 }
 
 /* リマインド */
-.recture-list{
+
+
+.lecture-list{
     padding-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.recture-item{
+.lecture-item{
     display: flex;
     background-color: #b4d1be;
     border-radius: 10px;
@@ -204,11 +203,11 @@ main{
     padding: 40px 20px 20px 0;
 }
 
-.recture-item:nth-of-type(odd){
+.lecture-item:nth-of-type(odd){
     flex-direction: row-reverse;
 }
 
-.recture-itemImage {
+.lecture-itemImage {
     border-radius: 10px;
     overflow: hidden;
     width: 480px;
@@ -217,20 +216,20 @@ main{
     /* margin-top: -40px; */
 }
 
-.recture-item:nth-of-type(odd) .recture-itemImage{
+.lecture-item:nth-of-type(odd) .lecture-itemImage{
     /* margin-right: -40px; */
 }
 
-.recture-item:nth-of-type(even) .recture-itemImage{
+.lecture-item:nth-of-type(even) .lecture-itemImage{
     margin-left: -40px;
 }
 
-.recture-itemBody {
+.lecture-itemBody {
     padding: 48px 56px;
     width: 100%;
 }
 
-.recture-titleNumber{
+.lecture-titleNumber{
     font-weight: bold;
     font-size: 58px;
     color: #ab8424;
@@ -240,7 +239,7 @@ main{
 }
 
 
-.recture-titleText {
+.lecture-titleText {
     font-weight: bold;
     font-size: 24px;
     line-height: 1.5;
@@ -248,16 +247,18 @@ main{
     margin-left: 20px;
     }
     
-.rectureOutline{
+.lectureOutline{
     margin-top: 40px;
 }
 
-.recture-description {
+.lecture-description {
     font-weight: 14px;
     line-height: 1.8;
     letter-spacing: 0.05em;
     margin-top: 12px;
 }
+
+
 
 /* ハッカソンレポ */
 
