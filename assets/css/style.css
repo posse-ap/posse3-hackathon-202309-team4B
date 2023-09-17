@@ -196,12 +196,12 @@ main{
 }
 
 .about-gn{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
 }
 .advice-list{
 
@@ -379,7 +379,6 @@ main{
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 1000px;
-    
     padding: 20px;
     margin: 10px auto;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -395,8 +394,10 @@ main{
 /* メモボディ */
 .memo-body {
     display: flex;
-    gap: 100px;
     margin-top: 10px;
+    gap: 30px;
+    flex-direction: column;
+    padding: 0 75px 0;
 }
 
 /* メモ入力フィールド */
