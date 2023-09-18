@@ -36,6 +36,7 @@ body{
     align-items: center;
     margin-left: auto;
     margin-right: 120px;
+    transition: visibility .3s linear, opacity .3s linear;
 }
 
 .header-navList{
@@ -53,6 +54,22 @@ body{
     display: flex;
 }
 
+.header.is-transparent {
+    background-color: transparent;
+    border: none;
+}
+
+.header.is-transparent:not(.is-open) .header-logo {
+    filter: brightness(10);
+}
+
+.header.is-transparent:not(.is-open) .header-navLink {
+    color: #FFFFFF;
+}
+
+.header.is-transparent:not(.is-open) .header-snsLink {
+    filter: brightness(10);
+}
 /**
 フッター 
  **/
@@ -148,9 +165,12 @@ body{
     height: 550px;
     margin-top: -100px;
     /* position: relative; */
+
     background: url(../img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
     opacity: 0.5;
 }
+
+
 
 .mainVisual-inner {
     max-width: 980px;
@@ -177,12 +197,6 @@ body{
 .mainVisual-title2{
     background-color: #ffffff;
     color: #fff201;
-    font-weight: bold;
-    line-height: 1.8;
-    letter-spacing: 0.05em;
-    font-size: 50px;
-    padding: 0 10px;
-    margin-left: 220px;
 }
 
 .about-text{
@@ -325,6 +339,8 @@ body{
 .linkButton{
     font-size: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .button-item:hover{
@@ -691,6 +707,7 @@ body{
     background: rgba(0, 0, 0, 0.8);
     z-index: 5;
 }
+
 
 .modal-content{
     position: absolute;
