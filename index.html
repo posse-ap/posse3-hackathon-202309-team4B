@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <header class="header is-open" id="js-header">
+    <header class="header is-open is-transparent" id="js-header">
         <a href="./" class="header-logo">
             <img src="./assets/img/logo.svg" alt="POSSE" class="header-logoImg">
         </a>
@@ -65,7 +65,7 @@
     </header>
 
     <main>
-      <section class="mainVisual">
+      <section class="mainVisual" id="js-mainVisual">
         <div class="mainVisual-inner">
           <div class="mainVisual-head">
             <div class="mainVisual-title">POSSEvolution</div>
@@ -107,7 +107,9 @@
                       <h3 class="follower">るい</h3>
                       <p class="right-text animated-text gn-text">友達のバ先のイタリアン食べた。美味しかったよ。</p>
                     </li>
-                </ul>
+
+                  </ul>
+
                 </div>
         </section>
         <section>
@@ -139,7 +141,7 @@
       </section>
       </div>
       <script>
-        $(function() {                <!--120~135 by持丸(remind-htmlのL139~154,また、hackathon-htmlのL158~173ら2つとほぼ同内容)-->
+        $(function() {                                 <!--by持丸-->
           $('.square').hide();
           $(window).scroll(function() {
             if ($(this).scrollTop() > 200) {
@@ -154,7 +156,7 @@
               scrollTop: 0
             }, 400);
           })
-        });
+        });                                             <!--/by持丸-->
       </script>
     </main>
 
