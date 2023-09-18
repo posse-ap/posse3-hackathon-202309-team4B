@@ -246,6 +246,21 @@ body{
     font-size: 20px;
 }
 
+.monthly-birthday{
+    font-size: 50px;
+    color: #803515;
+    font: bold;
+}
+
+.people{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.date{
+    font-size: 30px;
+}
+
 /* styles.css もっちーここから*/
 
 @keyframes left-animation {
@@ -300,7 +315,7 @@ body{
     display: flex;
     justify-content: center;
     gap: 50px;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
 }
 
 .button-item{
@@ -328,6 +343,23 @@ body{
 .button-item:hover{
     background-color: #b96109;
     transform: scale(1.2);
+}
+
+.people-img{
+    display: table-cell;
+    vertical-align: top;
+    width: 100px;
+}
+
+.people-img img{
+    border-radius: 50%;
+    width: 100px;
+}
+
+.section-body2{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
 }
 
 
