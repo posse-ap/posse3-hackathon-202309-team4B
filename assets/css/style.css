@@ -2,34 +2,41 @@
 main{
     margin-top: 100px;
     background-color: #faf5e0;
+    padding-bottom: 60px;
 }
-
-/* ヘッダー */
-.header {
-  display: flex;
-  align-items: center;
-  height: 80px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  border-bottom: solid 1px #adadad; /*ヘッダーの下の薄い線*/
-  padding: 0 24px; /*余白の設定*/
-  z-index: 10000; /*ヘッダーが一番上に表示されるように順序を設定*/
-  transition: background-color 0.3s linear;
+body{
+    color: #333333;
+    font-family: "Noto Sans JP", sans-serif;
+}
+/** 
+ヘッダー 
+**/
+.header{ 
+    display: flex;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: solid 1px #ADADAD;
+    padding: 0 24px;
+    z-index: 10000;/*ヘッダーが一番上に表示されるように順序を設定*/
+    transition: background-color 0.3s linear;
 }
 
 .header-logo{
-    width: flex; 
+    width: flex;
     margin-left: 80px;
 }
 
 .header-nav{
     display: flex;
-    align-items: center; 
-    margin-left: auto;/*ナビゲーションバーを右寄せ*/
+    align-items: center;
+    margin-left: auto;
     margin-right: 120px;
+    transition: visibility .3s linear, opacity .3s linear;
 }
 
 .header-navList{
@@ -47,55 +54,64 @@ main{
     display: flex;
 }
 
-/* フッター */
-.footer {
-  padding-top: 40px 0px 40px;
-}
-.footer-copyright {
-  text-align: center;
-  margin-top: 24px;
-  border-top: solid 1px;
-  color: darkgrey;
-  letter-spacing: 0.1em;
-  line-height: 1.5;
-  font-size: 10px;
-  padding: 24px;
+.header.is-transparent {
+    background-color: transparent;
+    border: none;
 }
 
-/* 共通 */
+.header.is-transparent:not(.is-open) .header-logo {
+    filter: brightness(10);
+}
+
+.header.is-transparent:not(.is-open) .header-navLink {
+    color: #FFFFFF;
+}
+
+.header.is-transparent:not(.is-open) .header-snsLink {
+    filter: brightness(10);
+}
+/**
+フッター 
+ **/
+/* .footer {
+    padding-top: 40px;
+} */
+.footer-copyright {
+    text-align: center;
+    border-top: solid 1px;
+    color: darkgrey;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    font-size: 10px;
+    padding: 24px;
+}
+
+/** 
+共通項目 
+**/
 .section {
-  padding-top: 80px;
+  /* padding-top: 80px; */
+    margin-top: -20px;
 }
 
 .section-body {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  position: relative;
+    /* margin-top: 40px; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    /* gap: ; */
 }
 
-.title {
-  font-size: 36px; /* フォントサイズ */
-  font-weight: bold; /* 太字 */
-  color: #333; /* テキストの色 */
-  text-align: center; /* 中央寄せ */
-  margin: 20px 0; /* 上下のマージン */
-  text-transform: uppercase; /* テキストを大文字に変換 */
-  letter-spacing: 2px; /* 文字間隔を調整 */
-}
-
-/* メインページ */
-.mainVisual {
-  background: url(../img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg)
-    center center / cover no-repeat;
-  height: 100vh;
-  padding: 40px 24px;
-  margin-top: -40px;
-  display: flex;
-  align-items: flex-end;
-  background-size: cover;
+.title{
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .title{
@@ -104,6 +120,7 @@ main{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* テキストの影 */
     padding: 10px 20px; /* 内側の余白 */
     border-radius: 10px; /* 角丸 */
+    margin-top: -20px;
 }
 
 .leadItem {
@@ -112,6 +129,7 @@ main{
 	padding-bottom: 50px;
 	font-size: 26px;
 	text-align: center;
+    margin-top: 50px;
 }
 
 .leadItem span {
@@ -122,7 +140,7 @@ main{
 .leadItem::before {
 	content: attr(data-en);
 	position: absolute;
-	top: -20px;
+	top: -10px;
 	left: 50%;
 	transform: translateX(-50%);
 	color: rgba(224,66,114,0.2);
@@ -140,142 +158,271 @@ main{
 	height: 40px;
 	background-color: rgba(224,66,114,1);
 }
-
-/* .leadItem{
-    display: block;
-    width: fit-content;
-    position: relative;
-    font-size: 24px; 
-    font-weight: bold; 
-    color: #333; 
-    text-align: center; 
-    margin: 0 auto; 
-}
-
-.leadItem::after {
-    content: ''; 
-    display: block; 
-    width: 100%; 
-    height: 3px; 
-    background-color: #0077b6; 
-    margin: 10px auto; 
-    position: absolute;
-} */
-
-.mainVisual-inner {
-  max-width: 980px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.mainVisual-head {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: flex-start;
-}
-
-
-/* メインページ */
+/**
+メインページ 
+**/
 .mainVisual{
     height: 550px;
-    position: relative;
+    margin-top: -100px;
+    /* position: relative; */
+
     background: url(../img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
-    /*display: flex;
-    align-items: flex-end;*/
+    opacity: 0.5;
 }
 
-.mainVisual-lead {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-weight: bold;
-    color: #fff;
-}
 
-.mainVisual-picture{
-    position: relative;
+
+.mainVisual-inner {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+}
+.mainVisual-head {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 300px;
+    gap: 12px;
+    align-items: center;
+    margin-left: 220px;
 }
 
 .mainVisual-title{
-    background-color: #ffffff00;
-    color: #ffffff;
+    color: red;
     font-weight: bold;
     line-height: 1.8;
     letter-spacing: 0.05em;
-    font-size: 55px;
-    padding-left: 20px;
-    padding-right: 4px;
-
+    font-size: 60px;
+    padding: 0 10px;
+}
+.mainVisual-title2{
+    background-color: #ffffff;
+    color: #fff201;
 }
 
-.linkButton:hover{
-    background-color: #0056b3;
+.about-text{
+    color: rgb(23, 20, 20);
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-/* リマインド */
-.recture-list{
+.about-gn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-evenly;
+    background-color: #cf9797;
+    border-radius: 28px;
+    margin: 0 300px;
+}
+
+.advice-item{
+    margin: 30px 64px;
+    background-color: #fcf9de;
+    padding: 20px;
+    width: 550px;
+    border-radius: 10px;
+}
+
+.leader{
+    color: rgb(45, 30, 30);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.follower{
+    color: rgb(45, 30, 30);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.gn-text{
+    color: rgb(45, 30, 30);
+    font-size: 20px;
+}
+
+.monthly-birthday{
+    font-size: 50px;
+    color: #803515;
+    font: bold;
+}
+
+.people{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.date{
+    font-size: 30px;
+}
+
+/* styles.css もっちーここから*/
+
+@keyframes left-animation {
+    0% { transform: translateX(-100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes right-animation {
+    0% { transform: translateX(100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+.animated-text {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.left-text {
+    animation-name: left-animation;
+    animation-delay: 1s; /* 適宜遅延を調整 */
+}
+
+.right-text {
+    animation-name: right-animation;
+    animation-delay: 1s; /* 適宜遅延を調整 */
+}
+
+
+
+.square{
+    width: 60px;
+    height: 60px;
+    background-color: chocolate;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 100%;
+    z-index: 10000;
+}
+
+.buttonSection{
+    margin-top: 40px;
+}
+
+.button-list{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.button-item{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e8884d;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.linkButton{
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.button-item:hover{
+    background-color: #b96109;
+    transform: scale(1.2);
+}
+
+.people-img{
+    display: table-cell;
+    vertical-align: top;
+    width: 100px;
+}
+
+.people-img img{
+    border-radius: 50%;
+    width: 100px;
+}
+
+.section-body2{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+
+
+
+/** 
+リマインドページ 
+**/
+.lecture-list{
+
     padding-top: 40px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    /* gap: 40px; */
 }
 
-.recture-item{
+.lecture-item{
     display: flex;
     background-color: #b4d1be;
     border-radius: 10px;
-    min-height: 324px;
-    margin: 0 200px;
-    padding: 40px 20px 20px 0;
+    min-height: 150px;
+    margin: 40px 200px;
+    padding: 20px 20px 5px 0;
 }
 
-.recture-item:nth-of-type(odd){
+.lecture-item:nth-of-type(odd){
     flex-direction: row-reverse;
 }
-.daily-item:nth-of-type(even){
-    /* margin-left: 40px; */
-}
 
-.recture-itemImage{
+.lecture-itemImage {
     border-radius: 10px;
     overflow: hidden;
-    width: 480px;
-    height: 320px;
+    width: 350px;
+    height: 230px;
     flex-shrink: 0;
-    margin-top: 50px;
+    /* margin-top: -40px; */
+}
+
+.lecImg1{
 
 }
 
-.recture-itemImage {
-  border-radius: 10px;
-  overflow: hidden;
-  width: 480px;
-  height: 320px;
-  flex-shrink: 0;
-  margin-top: -40px;
+.lecImg2{
+    border-radius: 45px;
 }
 
-.recture-item:nth-of-type(odd) .recture-itemImage{
-    /* margin-right: -40px; */
+.lecImg3{
+    border-radius: 10px ;
 }
 
-.recture-item:nth-of-type(even) .recture-itemImage{
+.lecture-item:nth-of-type(even) .lecture-itemImage{
     margin-left: -40px;
 }
 
-.recture-item:nth-of-type(even) .daily-itemImage {
-  margin-left: -40px;
+.lecture-itemBody {
+    padding: 40px 56px;
+    width: 100%;
 }
 
-
-.recture-itemBody {
-  padding: 48px 56px;
-  width: 100%;
-
-.recture-titleNumber{
+.lecture-titleNumber{
     font-weight: bold;
     font-size: 58px;
     color: #ab8424;
@@ -285,90 +432,306 @@ main{
 }
 
 
+.lecture-titleText {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    margin-left: 20px;
+}
 
-.recture-titleText {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 1.5;
-  letter-spacing: 0.05em;
-  margin-left: 20px;
-  }
-  
-.rectureOutline{
+.lectureOutline{
     margin-top: 40px;
 }
 
-.recture-description {
-  font-weight: 14px;
-  line-height: 1.8;
-  letter-spacing: 0.05em;
-  margin-top: 12px;
+.lecture-description {
+    font-weight: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    margin-top: 12px;
 }
 
-/* ハッカソンレポ */
-.hackathon-sectionbody {
-  margin: 50px;
+/*メモアイテム全体*/
+.memoItem {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 1000px;
+    padding: 20px;
+    margin: 10px auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.winnerInterview-img {
-  max-width: 100%;
+/* メモタイトル */
+.memo-title {
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    color: #333;
 }
 
-.explain {
-  font-size: 20px;
-  margin-top: 30px;
+/* メモボディ */
+.memo-body {
+    display: flex;
+    margin-top: 10px;
+    gap: 30px;
+    flex-direction: column;
+    padding: 0 100px 0;
+}
+.memo-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* メモ入力フィールド */
+.new-memo {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 33px;
+}
+.memo-text{
+    text-align: center;
+}
+
+/* メモ追加ボタン */
+.add-memo {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-memo:hover {
+    background-color: #005b8b;
+}
+
+/* メモリスト */
+.memo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* メモアイテム */
+.memo-text {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.memo-text:last-child {
+    margin-bottom: 0;
+}
+
+.inform-item{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e8884d;
+    width: 400px;
+    height: 50px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+
+/**
+ハッカソンレポ 
+**/
+
+.question{
+    padding-left: 150px;
+    padding-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.question2{
+    padding-left: 150px;
+    padding-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+
+.winnerInterview{
+    max-width: 100%;
+    text-align: center;
+}
+
+.winnerInterview-img{
+    box-shadow: #333;
+}
+
+.explain{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.winnerQuestion {
+    justify-content: center;
+}
+
+.winnerName{
+    text-align: center;
+    font-weight: bold;
 }
 
 .winnerComment-box {
-  border-collapse: separate;
-  border-spacing: 15px 2px;
-  display: table;
-  margin: 30px 0;
-  table-layout: fixed;
-  width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px 2px;
+    display: table;
+    margin: 30px 0;
+    table-layout: fixed;
+    width: 100%;
+    
 }
 .winner-img {
-  display: table-cell;
-  vertical-align: top;
-  width: 100px;
+    display: table-cell;
+    vertical-align: top;
+    width: 100px;
 }
 .winner-img img {
-  border-radius: 50%;
-  width: 100px;
+    border-radius: 50%;
+    width: 100px;
 }
-.winner-talk {
-  background-color: rgb(159, 192, 231);
 
-  border-bottom: 1px solid #ddd;
-  border-radius: 8px;
-  display: table-cell;
-  padding: 10px;
-  position: relative;
-  font-size: 30px;
+
+.comment{
+    font-size: 18px;
+}
+
+.winner-talk{
+    background-color: rgb(238, 175, 104);
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    font-size: 30px;
+    z-index: 0;
 }
 .winner-talk-left:after {
-  content: "";
-  position: absolute;
-  border-right: 12px solid rgb(159, 192, 231);
-  border-top: 12px solid transparent;
-  border-bottom: 12px solid transparent;
-  left: -12px;
-  top: 40px;
-}
-/* .winner-talk-right:after {
-
-
     content: '';
     position: absolute;
-    border-left: 12px solid #fff;
+    border-right: 12px solid rgb(238, 175, 104);
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
-    right: -12px;
-    top: 40px;
+    left: -12px;
+    top: 12px;
 
-  } */
+}
 
-/* .winner-talk p {
-    line-height: 1.4;
+.answerBox{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+}
+.answerBox2{
+    margin-left: 25%;
+}
+
+
+
+#info{
+	display: none;
+}
+
+.modaal-container{
+    max-width: 600px;
+}
+
+.modaal-close:after, 
+.modaal-close:before{
+	background:#ccc;	
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+	background:#666;
+}
+
+.privacy{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.privacy-info{
+    display: flex;
+    height: 100px;
+    width: auto;
+}
+.privacyInfo-exp{
+    display: flex;
+    align-items: center;
+}
+
+*{
     margin: 0;
-  } */
+    padding: 0;
+}
+    
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+}
+
+.modal-bg{
+    position: absolute;
+    height: 100%;
+    width: 2000px;
+    margin-left: -600px;
+    /* height: 100vh;
+    width: 100%; */
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 5;
+}
+
+
+.modal-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    overflow: scroll; /* はみ出た部分はスクロールさせる */
+    /* これが無いと「overflow:scroll」が利かない */
+    width: 60%;/* これが無いと「overflow:scroll」が利かない */
+    background: white;
+    padding: 40px;
+    z-index: 10;
+}
+
+body.fixed {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+.js-modal-close{
+    display: flex;
+    justify-content: end;
+    border: #0077b6;
+    color: #0077b6;
+
+}
