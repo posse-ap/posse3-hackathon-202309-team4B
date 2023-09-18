@@ -188,12 +188,15 @@ body{
 
 .mainVisual-title{
     color: red;
-    
     font-weight: bold;
     line-height: 1.8;
     letter-spacing: 0.05em;
     font-size: 60px;
     padding: 0 10px;
+}
+.mainVisual-title2{
+    background-color: #ffffff;
+    color: #fff201;
 }
 
 .about-text{
