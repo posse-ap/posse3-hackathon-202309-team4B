@@ -114,22 +114,6 @@
     align-items: center;
   }
   
-  /* .header-corporateLink{
-    color: var(--gray-dark-color);
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-  }
-  
-  .header-corporateLink::after{
-    content: '';
-    display: block;
-    width: 14px;
-    height: 14px;
-    background: url(../../img/icon-external-link.svg) center center / contain no-repeat;
-  } */
 
   .header.is-transparent:not(.is-open) .header-buttonLine{
     background-color: #fff;
@@ -148,7 +132,8 @@
     background-image: url(/assets/img/LINE_ALBUM_ハッカソン\　バス・開会式_230917_1.jpg) center center / cover no-repeat;
     height: 350px;
     padding: 16px 12px;
-    margin-top: -60px;
+    opacity: 0.5;
+    margin-top: -100px;
 }
 .mainVisual-inner{
     max-width: 980px;
@@ -165,13 +150,12 @@
     margin-bottom: 100px;
 }
 .mainVisual-title{
-    font-size: 40px;
-    color: rgb(255, 0, 0);
-    background-color: #ffffff;
+    font-size: 30px;
+    color: red;
     font-weight: bold;
     line-height: 1.8;
     letter-spacing: .05em;
-    margin-right: 70px;
+    margin-left: -70px;
 }
 .mainVisual-title2{
   font-size: 40px;
@@ -282,6 +266,17 @@
 
 .privacyInfo-exp{
   font-size: 16px;
+}
+
+.modal-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-57%,-50%);
+  overflow: scroll;
+  width: 100%;
+  background: #FFFFFF;
+  padding: 40px;
 }
   /**
   * 2.5 - リマインド
