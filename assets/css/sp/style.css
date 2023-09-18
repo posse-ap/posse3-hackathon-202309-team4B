@@ -230,6 +230,22 @@
   font-size: 15px;
 }
 
+.section-body2{
+  gap: 20px;
+}
+
+.monthly-birthday{
+  font-size: 25px;
+}
+
+.people{
+  font-size: 20px;
+}
+
+.date{
+  font-size: 18px;
+}
+
   /**
   * 2.4 - ハッカソンレポ
   */
