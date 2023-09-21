@@ -3,7 +3,7 @@
 //ヘッダー
 //ヘッダー・ボタンの要素を取得
 const header = document.getElementById('js-header');
-const button = document.getElementById('js-headerButton');
+const button = document.getElementById('js-headerButton');*/
 
 //ボタンをクリックした時の処理
 button.addEventListener('click',function(){
@@ -12,7 +12,7 @@ button.addEventListener('click',function(){
 
 const mainVisual = document.getElementById('js-mainVisual');
 
-window.addEventListener("scroll", () => {
+ window.addEventListener("scroll", () => {
     if (window.scrollY > mainVisual.clientHeight - header.clientHeight) {
         header.classList.remove("is-transparent");
     } else {
@@ -112,7 +112,7 @@ addMemoButton.addEventListener('click',function(){
 // なつき
 const lectureSlideOptions = {
     type: 'loop',
-    gap:40,
+    gap: 40,
     padding: {left:28, right:28 },
     destroy:true,
     breakpoints: {
@@ -130,8 +130,8 @@ new Splide('#js-lectureSlide', lectureSlideOptions).mount();
 
 
 
-
-const animatedTexts = document.querySelectorAll('.animated-text');                     /*L75~90 by持丸*/
+/*持丸*/
+const animatedTexts = document.querySelectorAll('.animated-text');
 
         let isAnimationPlaying = false;
 
